@@ -1,0 +1,26 @@
+# Agent 运行时（discussion §3.2：基于 LangChain）
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+
+# 向量库（Chroma）
+chromadb>=0.5.0
+
+# PDF 预处理（§3.3.1：PyMuPDF / pdfplumber / PyPDF）
+pymupdf>=1.24.0
+# pdfplumber>=0.11.0
+# pypdf>=4.0.0
+
+# 环境与 API（.env + LLM）
+python-dotenv>=1.0.0
+
+# 嵌入与 LLM 接入（可选其一或多种）
+langchain-openai>=0.2.0
+# langchain-anthropic>=0.2.0
+# litellm>=1.0.0
+
+# 知识图谱（首版直接使用 Neo4j）
+neo4j>=5.0.0
+
+# 演示前端（可选：Dash）
+# dash>=2.14.0

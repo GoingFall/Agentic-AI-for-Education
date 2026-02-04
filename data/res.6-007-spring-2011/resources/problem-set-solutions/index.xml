@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Problem Set Solutions on MIT OpenCourseWare</title>
+    <link>/resources/problem-set-solutions/</link>
+    <description>Recent content in Problem Set Solutions on MIT OpenCourseWare</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="/resources/problem-set-solutions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Problem Set 1 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw01_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw01_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to introduction.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 10 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw10_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw10_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to discrete-time fourier series.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 11 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw11_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw11_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to discrete-time fourier transform.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 12 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw12_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw12_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to filtering.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 13 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw13_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw13_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to continuous-time modulation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 14 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw14_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw14_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to demonstration of amplitude modulation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 15 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw15_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw15_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to discrete-time modulation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 16 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw16_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw16_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to sampling.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 17 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw17_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw17_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to interpolation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 18 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw18_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw18_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to discrete-time processing of continuous-time signals.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 19 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw19_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw19_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to discrete-time sampling.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 2 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw02_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw02_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to signals and systems: part I.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 20 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw20_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw20_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to The laplace transform.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 21 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw21_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw21_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to continuous-time second-order systems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 22 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw22_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw22_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to the z-transform.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 23 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw23_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw23_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to mapping continuous-time filters to discrete-time filters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 24 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw24_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw24_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to butterworth filters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 25 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw25_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw25_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to feedback.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 26 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw26_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw26_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to feedback example: the inverted pendulum.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 3 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw03_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw03_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to signals and systems: part II.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 4 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw04_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw04_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to convolution.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 5 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw05_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw05_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to properties of linear, time-invariant systems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 6 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw06_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw06_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to systems represented by differential and difference equations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 7 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw07_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw07_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to continuous-time fourier series.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 8 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw08_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw08_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to continuous-time fourier transform.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 9 Solutions</title>
+      <link>/resources/mitres_6_007s11_hw09_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mitres_6_007s11_hw09_sol/data.json</guid>
+      <description>&lt;p&gt;This resource contains solution to the problem set related to Fourier transform properties.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

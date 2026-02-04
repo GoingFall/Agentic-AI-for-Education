@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv
+venv/
+ENV/
+env/
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and local run
+*.log
+logs/
+.cache/
+
+# Chroma / vector DB (local persistence, optional)
+chroma_db/
+*.chroma/
+
+# LangChain / LangSmith (optional)
+.langchain/
+.langsmith/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local / secrets ( .env is under Virtual environments above )
+.env.local
+.env.*.local
+
+# Neo4j (local data if used)
+.neo4j/
+neo4j_data/
+
+# SQLite / local DB
+*.sqlite
+*.sqlite3
+*.db
+
+# Large or generated assets (uncomment if needed)
+# data/static_resources/*.pdf

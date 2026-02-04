@@ -1,0 +1,3967 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NMQZ25T');</script>
+    
+  
+  
+
+
+
+
+    
+    <link href="../../static_shared/css/course_offline.2f64e.css" rel="stylesheet">
+    
+
+    
+    <link href="../../static_shared/css/common.2f64e.css" rel="stylesheet">
+    
+
+
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="MIT OpenCourseWare is a web based publication of virtually all MIT course content. OCW is open and available to the world and is a permanent MIT activity">
+  <meta name="keywords" content="opencourseware,MIT OCW,courseware,MIT opencourseware,Free Courses,class notes,class syllabus,class materials,tutorials,online courses,MIT courses">
+  
+  <meta property="og:site_name" content="MIT OpenCourseWare">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/problem-sets/" />
+  <meta property="og:title" content="Signals and Systems | Electrical Engineering and Computer Science | MIT OpenCourseWare" />
+  <meta property="og:description" content="MIT OpenCourseWare is a web based publication of virtually all MIT course content. OCW is open and available to the world and is a permanent MIT activity" />
+
+  
+
+<meta property="og:image" content="https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/a31f0415c6d6d937cc662b4ed8cbbfe4_res-6-007s11.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mitocw" />
+<meta name="twitter:image:src" content="https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/a31f0415c6d6d937cc662b4ed8cbbfe4_res-6-007s11.jpg" />
+
+  <link rel="canonical" href="https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/problem-sets/" />
+
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type" : "WebPage",
+        "name": "MIT OpenCourseWare",
+        "description": "MIT OpenCourseWare is a web based publication of virtually all MIT course content. OCW is open and available to the world and is a permanent MIT activity",
+        "license": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "publisher": {
+          "@type": "CollegeOrUniversity",
+          "name": "MIT OpenCourseWare"
+        }
+      }
+  </script>
+
+  <title>Signals and Systems | Electrical Engineering and Computer Science | MIT OpenCourseWare</title>
+  <style>
+  @font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(../../static_shared/fonts/MaterialIcons-Regular.subset.504c7f0c308e930e9255.woff2) format('woff2'),
+      url(../../static_shared/fonts/MaterialIcons-Regular.subset.1f8f08f2bf0d6e078379.woff) format('woff'),
+      url(../../static_shared/fonts/MaterialIcons-Regular.subset.aa271372671db14b34f2.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Material Icons Round';
+    font-style: normal;
+    font-weight: 400;
+    src: local("MaterialIcons-Round"),
+    url(../../static_shared/fonts/MaterialIconsRound-Regular.subset.7154eae1d0e60e0dabe4.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Cardo Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Cardo'),
+      local('Cardo-Bold'),
+      url(../../static_shared/fonts/Cardo-Bold.d7bf1aa6f322a64b2fc3.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Cardo Italic';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Cardo'),
+      local('Cardo-Italic'),
+      url(../../static_shared/fonts/Cardo-Italic.0935d2ebbc05be3559b1.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Helvetica Light';
+    font-style: normal`;
+    font-weight: 400;
+    src: local('Helvetica Light'),
+      local('Helvetica-Light'),
+      url(../../static_shared/fonts/Helvetica-Light.70359849afb40079a1c8.ttf) format('truetype');
+  }
+  .external-link.nav-link::after {
+    background-image: url('../../static_shared/images/external_link.58bbdd86c00a2c146c36.svg'); 
+  }
+  </style>
+</head>
+
+
+<body class="course-home-page">
+  
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMQZ25T"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+  
+  <div class="overflow-auto">
+    <span class="course-header">
+    <div
+  id="mobile-course-nav"
+  class="navbar-offcanvas offcanvas-toggle offcanvas-toggle-close medium-and-below-only drawer">
+  <h3 class="my-4 d-flex align-items-center justify-content-between">
+    Browse Course Material
+    <button
+      class="btn"
+      type="button"
+      aria-label="Close Course Menu"
+      onclick="$('#mobile-course-nav-toggle').click();"
+      id="close-mobile-course-menu-button"
+      >
+      <img
+        src="../../static_shared/images/close_small.b0a2684ccc0da6407a56.svg"
+        alt=""
+        width="12px"
+      />
+    </button>
+  </h3>
+  
+
+<nav class="course-nav" aria-label="Course materials">
+  <ul class="w-100 m-auto list-unstyled">
+    
+      
+
+
+
+
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      
+        <a class="text-dark nav-link"
+          data-uuid="d32b684b-ed06-e8e6-5415-2f5dcf819873"
+           href="../../pages/introduction/index.html" >
+          Introduction
+        </a>
+      
+    </span>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <ul
+    class="course-nav-child-nav m-auto collapse"
+    id="nav-container_mobile_d32b684b-ed06-e8e6-5415-2f5dcf819873"
+    aria-labelledby="nav-button_mobile_d32b684b-ed06-e8e6-5415-2f5dcf819873"
+  >
+    
+  </ul>
+</li>
+
+    
+      
+
+
+
+
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      
+        <a class="text-dark nav-link"
+          data-uuid="62422d30-fe31-7d7f-5548-73ea79c81096"
+           href="../../pages/readings/index.html" >
+          Readings
+        </a>
+      
+    </span>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <ul
+    class="course-nav-child-nav m-auto collapse"
+    id="nav-container_mobile_62422d30-fe31-7d7f-5548-73ea79c81096"
+    aria-labelledby="nav-button_mobile_62422d30-fe31-7d7f-5548-73ea79c81096"
+  >
+    
+  </ul>
+</li>
+
+    
+      
+
+
+
+
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      
+        <a class="text-dark nav-link"
+          data-uuid="a781d5ac-598b-c606-3ba6-ac8138e446cf"
+           href="../../video_galleries/video-lectures/index.html" >
+          Video Lectures
+        </a>
+      
+    </span>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <ul
+    class="course-nav-child-nav m-auto collapse"
+    id="nav-container_mobile_a781d5ac-598b-c606-3ba6-ac8138e446cf"
+    aria-labelledby="nav-button_mobile_a781d5ac-598b-c606-3ba6-ac8138e446cf"
+  >
+    
+  </ul>
+</li>
+
+    
+      
+
+
+
+
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      
+        <a class="text-dark nav-link"
+          data-uuid="03f3a033-eec6-8163-6dbc-ff50345fb002"
+           href="../../pages/lecture-notes/index.html" >
+          Lecture Notes
+        </a>
+      
+    </span>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <ul
+    class="course-nav-child-nav m-auto collapse"
+    id="nav-container_mobile_03f3a033-eec6-8163-6dbc-ff50345fb002"
+    aria-labelledby="nav-button_mobile_03f3a033-eec6-8163-6dbc-ff50345fb002"
+  >
+    
+  </ul>
+</li>
+
+    
+      
+
+
+
+
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      
+        <a class="text-dark nav-link"
+          data-uuid="2e9a8aff-96f8-e559-11ed-fb8887012a8e"
+           href="../../pages/assignments/index.html" >
+          Assignments
+        </a>
+      
+    </span>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <ul
+    class="course-nav-child-nav m-auto collapse"
+    id="nav-container_mobile_2e9a8aff-96f8-e559-11ed-fb8887012a8e"
+    aria-labelledby="nav-button_mobile_2e9a8aff-96f8-e559-11ed-fb8887012a8e"
+  >
+    
+  </ul>
+</li>
+
+    
+  </ul>
+</nav>
+
+</div>
+
+    <div
+  id="course-info-drawer"
+  class="bg-faded pt-3 bg-light navbar-offcanvas navbar-offcanvas-right medium-and-below-only drawer"
+>
+  <div class="col-12">
+    <button
+      class="btn close-mobile-course-info"
+      type="button"
+      aria-label="Close Course Info"
+      onclick="$('#mobile-course-info-toggle').click();"
+      id="close-mobile-course-info-button"
+      >
+      <img
+        class=""
+        src="../../static_shared/images/close_small.b0a2684ccc0da6407a56.svg"
+        alt=""
+        width="12px"
+      />
+    </button>
+  </div>
+    
+
+<div class="course-info">
+  <div class="course-detail-title bg-light-gray">
+    <h2 class="font-black py-1 pl-3 m-0">
+      Course Info
+    </h2>
+  </div>
+  <div class="px-3 mt-4">
+    <div class="row">
+      <div class="col-12 ">
+        
+        <div class="">
+          
+          <h5 class="panel-course-info-title ">
+            Instructor
+            </h5>
+          <div class="course-info-content panel-course-info-text">
+            
+
+
+
+
+<ul class="list-unstyled m-0">
+  
+  
+  
+    
+  
+  <li>
+    <a   class="course-info-instructor strip-link-offline"    href="https://ocw.mit.edu/search/?q=Prof.&#43;Alan&#43;v.&#43;Oppenheim"  >Prof. Alan V. Oppenheim</a>
+  </li>
+  
+</ul>
+
+
+          </div>
+        </div>
+        
+        
+          
+          
+            <div class="mt-4">
+              <h5 class="panel-course-info-title ">
+                Departments
+              </h5>
+              <div class="course-info-content panel-course-info-text">
+                
+
+
+
+
+<ul class="list-unstyled m-0">
+  
+  
+  
+    
+  
+  <li>
+    <a   class="course-info-department strip-link-offline"    href="https://ocw.mit.edu/search/?d=Electrical&#43;Engineering&#43;and&#43;Computer&#43;Science"  >Electrical Engineering and Computer Science</a>
+  </li>
+  
+</ul>
+
+
+              </div>
+            </div>
+          
+         
+        
+        <div class="mt-4">
+          <h5 class="panel-course-info-title ">
+            As Taught In
+          </h5>
+          <div class="course-info-content panel-course-info-text">
+            Spring
+            
+              2011
+            
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <h5 class="panel-course-info-title ">
+            Level
+          </h5>
+          <div class="course-info-content panel-course-info-text">
+            
+              
+                <a   class=" strip-link-offline"    href="https://ocw.mit.edu/search/?l=Undergraduate"  >Undergraduate</a><br />
+              
+            
+          </div>
+        </div>
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+
+
+<div class=" mt-4">
+  <h5 class="panel-course-info-title ">
+    Topics
+  </h5>
+  <ul class="list-unstyled pb-2 m-0 panel-course-info-text">
+      <li>
+
+
+
+
+
+
+
+
+<div class="position-relative pt-1 pb-1 pl-4 ml-n2 ">
+  
+  <button
+    type="button"
+    class="topic-toggle border-0 bg-transparent pl-0"
+    data-target="#subtopic-container_mobile_0"
+    data-toggle="collapse"
+    aria-controls="subtopic-container_mobile_0"
+    aria-expanded="true"
+    aria-label="Engineering subtopics"
+  >
+    <i aria-hidden="true" class="material-icons"></i>
+  </button>
+  
+  <span class="topic-text-wrapper">
+    <a   class="text-black course-info-topic strip-link-offline"    href="https://ocw.mit.edu/search/?t=Engineering"  >Engineering</a></span>
+</div>
+
+<ul
+  class="pl-4 subtopic-container collapse show list-unstyled"
+  id="subtopic-container_mobile_0"
+  aria-label="Subtopics"
+>
+  
+  
+  
+  <li>
+    <div class="position-relative pt-1 pb-1  pl-4 ">
+      
+      <button
+        class="topic-toggle border-0 bg-transparent pl-0"
+        data-target="#speciality-container_mobile_0_0"
+        data-toggle="collapse"
+        aria-controls="speciality-container_mobile_0_0"
+        aria-expanded="true"
+        aria-label="Electrical Engineering specialties"
+      >
+        <i aria-hidden="true" class="material-icons"></i>
+      </button>
+      
+      <span class="topic-text-wrapper">
+        
+        <a   class="text-black course-info-topic strip-link-offline"    href="https://ocw.mit.edu/search/?t=Electrical&#43;Engineering"  >Electrical Engineering</a></span>
+    </div>
+    <ul
+      class="collapse show list-unstyled"
+      id="speciality-container_mobile_0_0"
+      aria-label="Specialties"
+    >
+      
+      <li class="pt-1 pb-1 pl-5">
+        <span class="topic-text-wrapper">
+          
+          <a   class="text-black course-info-topic strip-link-offline"    href="https://ocw.mit.edu/search/?t=Digital&#43;Systems"  >Digital Systems</a></span>
+      </li>
+      
+      <li class="pt-1 pb-1 pl-5">
+        <span class="topic-text-wrapper">
+          
+          <a   class="text-black course-info-topic strip-link-offline"    href="https://ocw.mit.edu/search/?t=Signal&#43;Processing"  >Signal Processing</a></span>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  
+  <li>
+    <div class="position-relative pt-1 pb-1  pl-4 ">
+      
+      <button
+        class="topic-toggle border-0 bg-transparent pl-0"
+        data-target="#speciality-container_mobile_0_1"
+        data-toggle="collapse"
+        aria-controls="speciality-container_mobile_0_1"
+        aria-expanded="true"
+        aria-label="Systems Engineering specialties"
+      >
+        <i aria-hidden="true" class="material-icons"></i>
+      </button>
+      
+      <span class="topic-text-wrapper">
+        
+        <a   class="text-black course-info-topic strip-link-offline"    href="https://ocw.mit.edu/search/?t=Systems&#43;Engineering"  >Systems Engineering</a></span>
+    </div>
+    <ul
+      class="collapse show list-unstyled"
+      id="speciality-container_mobile_0_1"
+      aria-label="Specialties"
+    >
+      
+      <li class="pt-1 pb-1 pl-5">
+        <span class="topic-text-wrapper">
+          
+          <a   class="text-black course-info-topic strip-link-offline"    href="https://ocw.mit.edu/search/?t=Computational&#43;Modeling&#43;and&#43;Simulation"  >Computational Modeling and Simulation</a></span>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+</ul>
+
+</li>
+      
+  </ul>
+</div>
+
+  
+
+
+
+<div class="">
+  <h5 class="course-detail-title panel-course-info-title mt-3">
+    Learning Resource Types
+  </h5>
+  <div>
+    <div class="row d-inline m-0">
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1">notes</i>
+    <span>Lecture Notes</span>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1">theaters</i>
+    <span>Lecture Videos</span>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1">assignment</i>
+    <span>Problem Sets</span>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1"></i>
+    <span>Problem Set Solutions</span>
+  </div>
+</div>
+
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+  
+
+
+<hr>
+<div class="pb-3">
+  <a class="download-course-link-button btn btn-outline-primary btn-link link-button text-decoration-none px-4 py-2"
+    role="button"
+    href="../../download/index.html">
+    <div class="text-center w-100">Browse Resources</div>
+  </a>
+</div>
+
+</div>
+
+    
+
+
+
+
+
+<div id="mobile-header" class="position-relative bg-black medium-and-below-only">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black d-flex">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="material-icons display-4 text-white align-bottom">menu</i>
+    </button>
+    <div class="mx-auto">
+      <a href="https://ocw.mit.edu/">
+        <img width="200" src="../../static_shared/images/ocw_logo_white.cabdc9a745b03db3dad4.svg" alt="MIT OpenCourseWare"/>
+      </a>
+    </div>
+    <div class="user-menu-container"></div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto pl-2 pt-2">
+        <li class="nav-item"></li>
+        <li class="nav-item">
+          <a   class="nav-link"    href="https://giving.mit.edu/give/to/ocw/?utm_source=ocw&amp;utm_medium=homepage_banner&amp;utm_campaign=nextgen_home"  >Give Now</a>
+        </li>
+        <li class="nav-item">
+          <a   class="nav-link"    href="https://ocw.mit.edu/about"  >About OCW</a>
+        </li>
+        <li class="nav-item">
+          <a   class="nav-link"   target="_blank"   href="https://mitocw.zendesk.com/hc/en-us"  >Help &amp; Faqs</a>
+        </li>
+        <li class="nav-item">
+          <a   class="nav-link"    href="https://ocw.mit.edu/contact"  >Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+<div id="desktop-header">
+  <div class="contents">
+    <div class="left">
+      <div class="ocw-logo">
+        <a href="https://ocw.mit.edu/">
+          <img src="../../static_shared/images/ocw_logo_white.cabdc9a745b03db3dad4.svg" alt="MIT OpenCourseWare" />
+        </a>
+      </div>
+    </div>
+    <div class="right">
+      
+      <a class="give-button text-white text-decoration-none font-weight-bold small-link d-flex align-items-center" aria-label="Give Now - Donate to MIT OpenCourseWare" href="https://giving.mit.edu/give/to/ocw/?utm_source=ocw&amp;utm_medium=homepage_banner&amp;utm_campaign=nextgen_home">
+        <span class="m-0 pr-2">GIVE NOW</span>
+        <img src="../../static_shared/images/heart_burgundy.e7c8635e8cc6538b89fa.svg" class="heart-burgundy" alt="" />
+      </a>
+      <a   class="text-white text-decoration-none font-weight-bold pl-5 pr-3 py-2"    href="https://ocw.mit.edu/about"  >about ocw</a>
+      <a   class="text-white text-decoration-none font-weight-bold px-3 py-2"   target="_blank"   href="https://mitocw.zendesk.com/hc/en-us"  >help &amp; faqs</a>
+      <a   class="text-white text-decoration-none font-weight-bold px-3 py-2"    href="https://ocw.mit.edu/contact"  >contact us</a>
+      <div class="user-menu-container"></div>
+    </div>
+  </div>
+</div>
+
+<div id="user-list-modal-container"></div>
+<div id="create-user-list-modal-container"></div>
+    </span>
+    
+    
+
+<div id="course-banner" class="p-0">
+  <div class="max-content-width course-banner-content m-auto py-3">
+    <div class="row">
+    <div class="col-11">
+      
+      <span class="course-number-term-detail">RES.6-007 | Spring 2011 | Undergraduate</span>
+      <br>
+      <br>
+      <h1>
+        <a
+          class="text-capitalize m-0 text-white"
+          href="../../index.html"
+        >Signals and Systems</a>
+      </h1>
+    </div>
+    <div class="col-1"><div class="bookmark-button-container" data-resourcereadableid="RES.6-007&#43;spring_2011"></div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+    <div id="course-main-content">
+      <div class="row">
+        <div class="col-12 course-home-grid">
+          <div class="medium-and-below-only">
+            <div class="d-flex align-items-center mb-3">
+              <div class="col-6 px-0">
+                <div>
+  <button
+    id="mobile-course-nav-toggle"
+    class="mobile-course-nav-toggle-btn d-inline-flex align-items-center offcanvas-toggle"
+    data-toggle="offcanvas"
+    data-target="#mobile-course-nav"
+  >
+    <img src="../../static_shared/images/expand.a062b1c47b121e3c7e03.svg" alt=""/>
+    <span class="pl-1">Menu</span>
+  </button>
+</div>
+
+              </div>
+              <div class="col-6 px-0">
+                
+
+
+  <button 
+    class="btn btn-link float-right mobile-course-info-toggle-btn toggle navbar-toggle offcanvas-toggle"
+    id="mobile-course-info-toggle"
+    data-toggle="offcanvas" 
+    data-target="#course-info-drawer">
+    More Info
+  </button>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row course-cards">
+        <div class="col-2 course-home-grid large-and-above-only">  
+          <div class="card">
+  <div class="card-body pr-2">
+    
+
+<nav class="course-nav" aria-label="Course materials">
+  <ul class="w-100 m-auto list-unstyled">
+    
+      
+
+
+
+
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      
+        <a class="text-dark nav-link"
+          data-uuid="d32b684b-ed06-e8e6-5415-2f5dcf819873"
+           href="../../pages/introduction/index.html" >
+          Introduction
+        </a>
+      
+    </span>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <ul
+    class="course-nav-child-nav m-auto collapse"
+    id="nav-container_desktop_d32b684b-ed06-e8e6-5415-2f5dcf819873"
+    aria-labelledby="nav-button_desktop_d32b684b-ed06-e8e6-5415-2f5dcf819873"
+  >
+    
+  </ul>
+</li>
+
+    
+      
+
+
+
+
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      
+        <a class="text-dark nav-link"
+          data-uuid="62422d30-fe31-7d7f-5548-73ea79c81096"
+           href="../../pages/readings/index.html" >
+          Readings
+        </a>
+      
+    </span>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <ul
+    class="course-nav-child-nav m-auto collapse"
+    id="nav-container_desktop_62422d30-fe31-7d7f-5548-73ea79c81096"
+    aria-labelledby="nav-button_desktop_62422d30-fe31-7d7f-5548-73ea79c81096"
+  >
+    
+  </ul>
+</li>
+
+    
+      
+
+
+
+
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      
+        <a class="text-dark nav-link"
+          data-uuid="a781d5ac-598b-c606-3ba6-ac8138e446cf"
+           href="../../video_galleries/video-lectures/index.html" >
+          Video Lectures
+        </a>
+      
+    </span>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <ul
+    class="course-nav-child-nav m-auto collapse"
+    id="nav-container_desktop_a781d5ac-598b-c606-3ba6-ac8138e446cf"
+    aria-labelledby="nav-button_desktop_a781d5ac-598b-c606-3ba6-ac8138e446cf"
+  >
+    
+  </ul>
+</li>
+
+    
+      
+
+
+
+
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      
+        <a class="text-dark nav-link"
+          data-uuid="03f3a033-eec6-8163-6dbc-ff50345fb002"
+           href="../../pages/lecture-notes/index.html" >
+          Lecture Notes
+        </a>
+      
+    </span>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <ul
+    class="course-nav-child-nav m-auto collapse"
+    id="nav-container_desktop_03f3a033-eec6-8163-6dbc-ff50345fb002"
+    aria-labelledby="nav-button_desktop_03f3a033-eec6-8163-6dbc-ff50345fb002"
+  >
+    
+  </ul>
+</li>
+
+    
+      
+
+
+
+
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      
+        <a class="text-dark nav-link"
+          data-uuid="2e9a8aff-96f8-e559-11ed-fb8887012a8e"
+           href="../../pages/assignments/index.html" >
+          Assignments
+        </a>
+      
+    </span>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <ul
+    class="course-nav-child-nav m-auto collapse"
+    id="nav-container_desktop_2e9a8aff-96f8-e559-11ed-fb8887012a8e"
+    aria-labelledby="nav-button_desktop_2e9a8aff-96f8-e559-11ed-fb8887012a8e"
+  >
+    
+  </ul>
+</li>
+
+    
+  </ul>
+</nav>
+
+  </div>
+</div>
+
+        </div>
+        <div class="col-sm-12 col-lg-10 course-home-grid">
+          <div class="">
+            <div class="card">
+              <div class="d-flex justify-content-between">
+                <div class="p-0 col-lg-9" id="main-course-section">
+                  <div class="card-body">
+                    
+<div class="mb-2">
+  <header>
+  <div class="course-section-title-container">
+    <div id="course-title">
+      
+      <h2 class="pb-1 mb-1">Problem Sets</h2>
+    </div>
+  </div>
+</header>
+
+  <article class="content pt-3 mt-1">
+    <main id="course-content-section"></main>
+  </article>
+</div>
+
+
+<div class="mb-5">
+  
+  
+
+
+
+
+
+
+
+
+
+  
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+      
+      
+      
+        
+        
+        
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/d367a3c05c298bed00aae37754dd2631_MITRES_6_007S11_hw01.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                95 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw01/index.html">
+    Problem Set 1
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/e7e527598f89cf8dbd91432500ac53b3_MITRES_6_007S11_hw01_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                212 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw01_sol/index.html">
+    Problem Set 1 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/8fbf4451c622e6efbcf7452222d21ea5_MITRES_6_007S11_hw02.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                214 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw02/index.html">
+    Problem Set 2
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/dfac4e2a745cc45c870bba07aa55885b_MITRES_6_007S11_hw02_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                335 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw02_sol/index.html">
+    Problem Set 2 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/5ef8ecc5a7d42a418c1db014c951ac9c_MITRES_6_007S11_hw03.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                347 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw03/index.html">
+    Problem Set 3
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/aa6f4739cf29d78a12a23fcf2033e298_MITRES_6_007S11_hw03_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                439 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw03_sol/index.html">
+    Problem Set 3 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/cab2602ff858c51113591d17321a80fc_MITRES_6_007S11_hw04.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                381 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw04/index.html">
+    Problem Set 4
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/0a374ee9df1ba2a9cd985807c735afa6_MITRES_6_007S11_hw04_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                427 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw04_sol/index.html">
+    Problem Set 4 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/7b78bd1fa3c324d9fc38d2cd4712fa85_MITRES_6_007S11_hw05.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                243 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw05/index.html">
+    Problem Set 5
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/1e8612f9dfd2b6b1c7fc293d862efbef_MITRES_6_007S11_hw05_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                296 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw05_sol/index.html">
+    Problem Set 5 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/f459a0f4f110bfbe4014ac71638a963b_MITRES_6_007S11_hw06.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                238 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw06/index.html">
+    Problem Set 6
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/9a3b227f76df51d979c2a45dcb5cc013_MITRES_6_007S11_hw06_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                383 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw06_sol/index.html">
+    Problem Set 6 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/bab467e6b94d56a6db87db20008f79e3_MITRES_6_007S11_hw07.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                294 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw07/index.html">
+    Problem Set 7
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/f8aec247fda51db827fccb48e79d75d6_MITRES_6_007S11_hw07_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                350 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw07_sol/index.html">
+    Problem Set 7 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/f6a14de1d6c3b5579ddc8216a9f59449_MITRES_6_007S11_hw08.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                212 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw08/index.html">
+    Problem Set 8
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/e51acadc431ffca5d005c4cbdc2954bc_MITRES_6_007S11_hw08_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                397 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw08_sol/index.html">
+    Problem Set 8 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/3eda274513d541c44c8f8e1820810bc7_MITRES_6_007S11_hw09.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                217 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw09/index.html">
+    Problem Set 9
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/5644da4d019dc13df5474608ba1a86d5_MITRES_6_007S11_hw09_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                377 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw09_sol/index.html">
+    Problem Set 9 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/d3e4ed69c3cbba40a820e233c1b165c9_MITRES_6_007S11_hw10.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                242 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw10/index.html">
+    Problem Set 10
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/2d02f68732ba1bbc5636f6b0e592bb1e_MITRES_6_007S11_hw10_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                390 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw10_sol/index.html">
+    Problem Set 10 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/cec53598ad9abc59ba27452ee69abd9b_MITRES_6_007S11_hw11.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                236 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw11/index.html">
+    Problem Set 11
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/8c724450219d7dbaf41eb103c9b32b4d_MITRES_6_007S11_hw11_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                371 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw11_sol/index.html">
+    Problem Set 11 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/4c95154af7a7be1b291b694fa70c2012_MITRES_6_007S11_hw12.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                299 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw12/index.html">
+    Problem Set 12
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/1152c6c78844fc1b4b26cf74706c641d_MITRES_6_007S11_hw12_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                338 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw12_sol/index.html">
+    Problem Set 12 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/3dd39d8869d41d0f6e18fbfba0bc43a0_MITRES_6_007S11_hw13.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                288 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw13/index.html">
+    Problem Set 13
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/62e9cb1d8d406927c3bec5cdd26eca06_MITRES_6_007S11_hw13_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                484 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw13_sol/index.html">
+    Problem Set 13 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/26df353dd7c4e0e951dc21647eb8e12a_MITRES_6_007S11_hw14.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                245 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw14/index.html">
+    Problem Set 14
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/b7a84672b3010c8396913e13982ab642_MITRES_6_007S11_hw14_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                219 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw14_sol/index.html">
+    Problem Set 14 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/8cd26351096b96a37b5d0cb77e57ed01_MITRES_6_007S11_hw15.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                239 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw15/index.html">
+    Problem Set 15
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/52e41825fec6d5aeff2c6b770f0ee779_MITRES_6_007S11_hw15_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                379 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw15_sol/index.html">
+    Problem Set 15 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/b9b2cf3b5250fc3ffbc87270dc00b9b1_MITRES_6_007S11_hw16.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                290 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw16/index.html">
+    Problem Set 16
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/4b9dbe2ae710d9e5704bc3404ae3c057_MITRES_6_007S11_hw16_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                330 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw16_sol/index.html">
+    Problem Set 16 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/bf03eadf8df817e605ac66ddb879abc8_MITRES_6_007S11_hw17.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                261 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw17/index.html">
+    Problem Set 17
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/87ec0a6abdf039b310238b8b3a2a7311_MITRES_6_007S11_hw17_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                308 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw17_sol/index.html">
+    Problem Set 17 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/0c50a4a9c848240457508853e740a8d1_MITRES_6_007S11_hw18.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                355 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw18/index.html">
+    Problem Set 18
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/4b8bdb80a06fd7d2ad5609dfe8ccb081_MITRES_6_007S11_hw18_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                438 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw18_sol/index.html">
+    Problem Set 18 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/f388ad1002e44fdcf2f552b11bb1194b_MITRES_6_007S11_hw19.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                249 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw19/index.html">
+    Problem Set 19
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/f9ac05e1fcfce06109f8156bf6fc40df_MITRES_6_007S11_hw19_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                339 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw19_sol/index.html">
+    Problem Set 19 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/9b71d98bd911fb3f8e0c22da10938d2d_MITRES_6_007S11_hw20.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                186 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw20/index.html">
+    Problem Set 20
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/0f156808b2a3d74400a366fcedef5286_MITRES_6_007S11_hw20_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                619 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw20_sol/index.html">
+    Problem Set 20 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/31896d1c870ed52b6dbd82b5787b4cba_MITRES_6_007S11_hw21.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                293 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw21/index.html">
+    Problem Set 21
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/3391a1b65c9a0174abc1c6f282aaa802_MITRES_6_007S11_hw21_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                502 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw21_sol/index.html">
+    Problem Set 21 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/1ac28716b8eeb7d41628d8b281c68c20_MITRES_6_007S11_hw22.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                265 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw22/index.html">
+    Problem Set 22
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/834952d8b368594273245145843aa69d_MITRES_6_007S11_hw22_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                409 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw22_sol/index.html">
+    Problem Set 22 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/c6be96f4137df6a9254a04b0882118e6_MITRES_6_007S11_hw23.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                298 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw23/index.html">
+    Problem Set 23
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/58320b64c975710ba7d046211cdc98d2_MITRES_6_007S11_hw23_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                569 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw23_sol/index.html">
+    Problem Set 23 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/994d3c4e751e07376ccb0c42d2b5862c_MITRES_6_007S11_hw24.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                297 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw24/index.html">
+    Problem Set 24
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/102cf6f6167c728056ee668eb733ee18_MITRES_6_007S11_hw24_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                361 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw24_sol/index.html">
+    Problem Set 24 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/1c16f0f87514ec62b768b07c69411228_MITRES_6_007S11_hw25.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                242 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw25/index.html">
+    Problem Set 25
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/25ceead0d50b25ca1e958032b2d834eb_MITRES_6_007S11_hw25_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                320 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw25_sol/index.html">
+    Problem Set 25 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/43a4eca68360580b2e4d82c0139b95b3_MITRES_6_007S11_hw26.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                430 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw26/index.html">
+    Problem Set 26
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="resource-item resource-list-page">
+  <div class="row">
+    <div class="d-inline-flex">
+      <a class="resource-thumbnail" href="../../static_resources/e6d4a2eddd183a1e73f87ee19657843a_MITRES_6_007S11_hw26_sol.pdf" target="_blank" aria-label="Download file" download>
+        
+        <div class="resource-type-thumbnail pdf">
+          <div class="d-flex align-self-center">pdf</div>
+        </div>  
+        <div class="download-container">
+          
+            <span class="download-link">
+              
+                  <img
+                    class="hide-offline resources-download"
+                    src="../../static_shared/images/resource-download.dab02d010ffdeffef264.svg"
+                    aria-hidden="true"
+                  />
+              
+            </span>
+            
+              <div class="resource-list-file-size">
+                384 kB
+              </div>
+            
+          
+        </div>
+      </a>
+      <div class="resource-list-item-details">
+        <a class="resource-list-title" href="../../resources/mitres_6_007s11_hw26_sol/index.html">
+    Problem Set 26 Solutions
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+
+</div>
+
+                  </div>
+                </div>
+                
+                  <button 
+  type="button" 
+  class="btn course-info-button large-and-above-only"
+  id="desktop-course-drawer-button"
+  data-target="#desktop-course-drawer"
+  data-toggle="collapse"
+  aria-label="Course Info"
+  aria-controls="desktop-course-drawer"
+  aria-expanded="false"
+>
+  <img
+    class="expand-drawer-img drawer-icon-img"
+    src="../../static_shared/images/left_arrow.3c482a1f6223bff3f0e6.svg"
+    alt=""
+  />
+  <img
+    class="collapse-drawer-img drawer-icon-img"
+    src="../../static_shared/images/close_small.b0a2684ccc0da6407a56.svg"
+    alt=""
+  />
+</button>
+
+<div class="collapse border-left p-0 large-and-above-only col-3" id="desktop-course-drawer">
+    
+
+<div class="course-info">
+  <div class="course-detail-title bg-light-gray">
+    <h2 class="font-black py-1 pl-3 m-0">
+      Course Info
+    </h2>
+  </div>
+  <div class="px-3 mt-4">
+    <div class="row">
+      <div class="col-12 ">
+        
+        <div class="">
+          
+          <h5 class="panel-course-info-title ">
+            Instructor
+            </h5>
+          <div class="course-info-content panel-course-info-text">
+            
+
+
+
+
+<ul class="list-unstyled m-0">
+  
+  
+  
+    
+  
+  <li>
+    <a   class="course-info-instructor strip-link-offline"    href="https://ocw.mit.edu/search/?q=Prof.&#43;Alan&#43;v.&#43;Oppenheim"  >Prof. Alan V. Oppenheim</a>
+  </li>
+  
+</ul>
+
+
+          </div>
+        </div>
+        
+        
+          
+          
+            <div class="mt-4">
+              <h5 class="panel-course-info-title ">
+                Departments
+              </h5>
+              <div class="course-info-content panel-course-info-text">
+                
+
+
+
+
+<ul class="list-unstyled m-0">
+  
+  
+  
+    
+  
+  <li>
+    <a   class="course-info-department strip-link-offline"    href="https://ocw.mit.edu/search/?d=Electrical&#43;Engineering&#43;and&#43;Computer&#43;Science"  >Electrical Engineering and Computer Science</a>
+  </li>
+  
+</ul>
+
+
+              </div>
+            </div>
+          
+         
+        
+        <div class="mt-4">
+          <h5 class="panel-course-info-title ">
+            As Taught In
+          </h5>
+          <div class="course-info-content panel-course-info-text">
+            Spring
+            
+              2011
+            
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <h5 class="panel-course-info-title ">
+            Level
+          </h5>
+          <div class="course-info-content panel-course-info-text">
+            
+              
+                <a   class=" strip-link-offline"    href="https://ocw.mit.edu/search/?l=Undergraduate"  >Undergraduate</a><br />
+              
+            
+          </div>
+        </div>
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+  <div class="px-3">
+    
+
+
+
+
+
+<div class=" mt-4">
+  <h5 class="panel-course-info-title ">
+    Topics
+  </h5>
+  <ul class="list-unstyled pb-2 m-0 panel-course-info-text">
+      <li>
+
+
+
+
+
+
+
+
+<div class="position-relative pt-1 pb-1 pl-4 ml-n2 ">
+  
+  <button
+    type="button"
+    class="topic-toggle border-0 bg-transparent pl-0"
+    data-target="#subtopic-container_desktop_0"
+    data-toggle="collapse"
+    aria-controls="subtopic-container_desktop_0"
+    aria-expanded="true"
+    aria-label="Engineering subtopics"
+  >
+    <i aria-hidden="true" class="material-icons"></i>
+  </button>
+  
+  <span class="topic-text-wrapper">
+    <a   class="text-black course-info-topic strip-link-offline"    href="https://ocw.mit.edu/search/?t=Engineering"  >Engineering</a></span>
+</div>
+
+<ul
+  class="pl-4 subtopic-container collapse show list-unstyled"
+  id="subtopic-container_desktop_0"
+  aria-label="Subtopics"
+>
+  
+  
+  
+  <li>
+    <div class="position-relative pt-1 pb-1  pl-4 ">
+      
+      <button
+        class="topic-toggle border-0 bg-transparent pl-0"
+        data-target="#speciality-container_desktop_0_0"
+        data-toggle="collapse"
+        aria-controls="speciality-container_desktop_0_0"
+        aria-expanded="true"
+        aria-label="Electrical Engineering specialties"
+      >
+        <i aria-hidden="true" class="material-icons"></i>
+      </button>
+      
+      <span class="topic-text-wrapper">
+        
+        <a   class="text-black course-info-topic strip-link-offline"    href="https://ocw.mit.edu/search/?t=Electrical&#43;Engineering"  >Electrical Engineering</a></span>
+    </div>
+    <ul
+      class="collapse show list-unstyled"
+      id="speciality-container_desktop_0_0"
+      aria-label="Specialties"
+    >
+      
+      <li class="pt-1 pb-1 pl-5">
+        <span class="topic-text-wrapper">
+          
+          <a   class="text-black course-info-topic strip-link-offline"    href="https://ocw.mit.edu/search/?t=Digital&#43;Systems"  >Digital Systems</a></span>
+      </li>
+      
+      <li class="pt-1 pb-1 pl-5">
+        <span class="topic-text-wrapper">
+          
+          <a   class="text-black course-info-topic strip-link-offline"    href="https://ocw.mit.edu/search/?t=Signal&#43;Processing"  >Signal Processing</a></span>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  
+  <li>
+    <div class="position-relative pt-1 pb-1  pl-4 ">
+      
+      <button
+        class="topic-toggle border-0 bg-transparent pl-0"
+        data-target="#speciality-container_desktop_0_1"
+        data-toggle="collapse"
+        aria-controls="speciality-container_desktop_0_1"
+        aria-expanded="true"
+        aria-label="Systems Engineering specialties"
+      >
+        <i aria-hidden="true" class="material-icons"></i>
+      </button>
+      
+      <span class="topic-text-wrapper">
+        
+        <a   class="text-black course-info-topic strip-link-offline"    href="https://ocw.mit.edu/search/?t=Systems&#43;Engineering"  >Systems Engineering</a></span>
+    </div>
+    <ul
+      class="collapse show list-unstyled"
+      id="speciality-container_desktop_0_1"
+      aria-label="Specialties"
+    >
+      
+      <li class="pt-1 pb-1 pl-5">
+        <span class="topic-text-wrapper">
+          
+          <a   class="text-black course-info-topic strip-link-offline"    href="https://ocw.mit.edu/search/?t=Computational&#43;Modeling&#43;and&#43;Simulation"  >Computational Modeling and Simulation</a></span>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+</ul>
+
+</li>
+      
+  </ul>
+</div>
+
+    
+
+
+
+<div class="">
+  <h5 class="course-detail-title panel-course-info-title mt-3">
+    Learning Resource Types
+  </h5>
+  <div>
+    <div class="row d-inline m-0">
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1">notes</i>
+    <span>Lecture Notes</span>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1">theaters</i>
+    <span>Lecture Videos</span>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1">assignment</i>
+    <span>Problem Sets</span>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1"></i>
+    <span>Problem Set Solutions</span>
+  </div>
+</div>
+
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+<hr>
+<div class="pb-3">
+  <a class="download-course-link-button btn btn-outline-primary btn-link link-button text-decoration-none px-4 py-2"
+    role="button"
+    href="../../download/index.html">
+    <div class="text-center w-100">Browse Resources</div>
+  </a>
+</div>
+
+  </div>
+</div>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+<div class="footer">
+    <div class="footer-main-content mx-auto">
+    	<div class="col-12 px-0">
+        	<div class="row align-items-center mx-0">
+            	<div class="col-12 col-md-8 px-0">
+					<div class="d-md-flex align-items-center">
+						<a href="https://openlearning.mit.edu/" target="_blank">
+							<img width="117px" src="../../static_shared/images/mit_ol.4165342f87abb1da46fd.svg" alt="MIT Open Learning" />
+						</a>
+						<div class="ml-md-3 mt-4 mt-md-0">
+							<div class="font-weight-bold">
+								Over 2,500 courses & materials
+							</div>
+							<div>
+								Freely sharing knowledge with learners and educators around the world. <a href='https://ocw.mit.edu/about'>Learn more</a>
+							</div>
+						</div>
+					</div>
+            	</div>
+				<div class="col-12 col-md-4 px-0 d-none d-md-block">
+					<div class="d-flex justify-content-md-end">
+	<div>
+		<a href="https://www.facebook.com/MITOCW" target="_blank">
+			<img class="footer-social-icon ml-0" src="../../static_shared/images/Facebook.d1f5caeb73d7d12505a2.png" alt="facebook"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://www.instagram.com/mitocw" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/Instagram.4df41828ffee4ff33d8a.png" alt="instagram"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://twitter.com/MITOCW" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/x-formerly-twitter-black.f8c75ad9f42902726d25.png" alt="x (formerly twitter)"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://www.youtube.com/mitocw" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/Youtube.7c9f62c4f1dc9515ebb4.png" alt="youtube"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://www.linkedin.com/company/mit-opencourseware/" target="_blank">
+			<img class="footer-social-icon nudge-up" src="../../static_shared/images/linkedin-black.2f7f8a6a3899f5d1e1d6.png" alt="linkedin"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://bsky.app/profile/mitocw.bsky.social" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/bluesky-black.9f4523fcefa9b6f25be7.png" alt="bluesky"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://mastodon.social/@mitocw" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/mastodon-black.9e2de31a28415c123800.png" alt="mastodon"/>
+		</a>
+	</div>
+</div>
+
+				</div>
+        	</div>
+    	</div>
+		
+		<div class="col-12 mt-3 mt-md-4 px-0">
+			<div class="row align-items-center mx-0">
+            	<div class="col-12 col-md-8 px-0">
+					<div class="d-lg-flex">
+						<div class="pr-md-2 mt-2 mt-lg-0 d-none d-lg-block">
+							© 2001–2026 Massachusetts Institute of Technology
+						</div>
+						<div class="px-lg-2 mt-2 mt-lg-0">
+							<a href="https://accessibility.mit.edu" target="_blank">Accessibility</a>
+						</div>
+						<div class="px-lg-2 mt-2 mt-lg-0">
+							<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons License</a>
+						</div>
+						<div class="px-lg-2 mt-2 mt-lg-0">
+							<a class="hide-offline" href='https://ocw.mit.edu/pages/privacy-and-terms-of-use/'>Terms and Conditions</a>
+						</div>
+					</div>
+            	</div>
+				<div class="col-12 col-md-4 px-0">
+					<div class="d-flex justify-content-md-end mt-4 mt-lg-0">
+						<div>
+						Proud member of: 
+						<a href="https://www.oeglobal.org/" target="_blank">
+							<img class="oeg-logo" src="../../static_shared/images/oeg_logo.8a31f7b87f30df2d0169.png" alt="Open Education Global"/>
+						</a>
+						</div>
+					</div>
+				</div>
+        	</div>
+		</div>
+
+		<div class="col-12 mt-5 px-0 d-md-none">
+			<div class="d-flex justify-content-md-end">
+	<div>
+		<a href="https://www.facebook.com/MITOCW" target="_blank">
+			<img class="footer-social-icon ml-0" src="../../static_shared/images/Facebook.d1f5caeb73d7d12505a2.png" alt="facebook"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://www.instagram.com/mitocw" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/Instagram.4df41828ffee4ff33d8a.png" alt="instagram"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://twitter.com/MITOCW" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/x-formerly-twitter-black.f8c75ad9f42902726d25.png" alt="x (formerly twitter)"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://www.youtube.com/mitocw" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/Youtube.7c9f62c4f1dc9515ebb4.png" alt="youtube"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://www.linkedin.com/company/mit-opencourseware/" target="_blank">
+			<img class="footer-social-icon nudge-up" src="../../static_shared/images/linkedin-black.2f7f8a6a3899f5d1e1d6.png" alt="linkedin"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://bsky.app/profile/mitocw.bsky.social" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/bluesky-black.9f4523fcefa9b6f25be7.png" alt="bluesky"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://mastodon.social/@mitocw" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/mastodon-black.9e2de31a28415c123800.png" alt="mastodon"/>
+		</a>
+	</div>
+</div>
+
+		</div>
+
+		<div class="col-12 mt-4 px-0 d-lg-none">
+			© 2001–2026 Massachusetts Institute of Technology
+		</div>
+    
+
+
+    
+    <script src="../../static_shared/js/course_offline.2f64e.js"></script>
+    
+
+
+
+
+
+    
+	</div>
+</div>
+
+  </div>
+  <script>
+function hideLinksOffline(){
+  if (!window.navigator.onLine) {
+    const stripLinks = document.querySelectorAll(".strip-link-offline")
+    const hideOffline = document.querySelectorAll(".hide-offline")
+    const showOffline = document.querySelectorAll(".show-offline")
+    Array.prototype.forEach.call(stripLinks, function(link) {
+      link.outerHTML = link.innerHTML
+    })
+    Array.prototype.forEach.call(hideOffline, function(link) {
+      link.classList.add("d-none")
+    })
+    Array.prototype.forEach.call(showOffline, function(link) {
+      link.classList.remove("d-none")
+    })
+  }
+}
+hideLinksOffline()
+</script>
+
+  
+
+<div
+  class="modal"
+  id="external-link-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="external-link-modal-title"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content p-3">
+      <div class="modal-header d-flex align-items-center">
+        <div class="d-flex align-items-center">
+          <img
+            class="modal-header-icon-img mr-3 align-baseline"
+            src="../../static_shared/images/external_link.58bbdd86c00a2c146c36.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <h1 class="modal-title" id="external-link-modal-title">
+            You are leaving MIT OpenCourseWare
+          </h1>
+        </div>
+        <button type="button" class="border-0 p-0 bg-transparent d-flex" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="material-icons modal-header-icon">close</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Please be advised that external sites may have terms and conditions, 
+        including license rights, that differ from ours. MIT OCW is not responsible 
+        for any content on third party sites, nor does a link suggest an endorsement 
+        of those sites and/or their content.
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-primary btn-link link-button"
+          data-dismiss="modal"
+          >
+            Stay Here
+        </button>
+        <a
+          role="button"
+          class="btn btn-primary btn-continue"
+          target="_blank"
+          href="#"
+        >
+          Continue
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script>
+    
+    
+    
+    
+    
+    
+    'use strict';
+    const COURSE_DRAWER_LOCAL_STORAGE_KEY = "desktopCourseDrawerState"
+    const COURSE_DRAWER_OPENED = "opened"
+    const COURSE_DRAWER_CLOSED = "closed"
+    
+    const DESKTOP_COURSE_DRAWER_ID = "desktop-course-drawer"
+    const COURSE_DRAWER_BTN_ID = "desktop-course-drawer-button"
+    const MAIN_COURSE_SECTION_ID = "main-course-section"
+
+    try{
+
+      
+
+      function initializeDesktopCourseDrawerState() {
+        const state = getLocalStorageItem(COURSE_DRAWER_LOCAL_STORAGE_KEY)
+        if (state === null) {
+          
+          setLocalStorageItem(COURSE_DRAWER_LOCAL_STORAGE_KEY, COURSE_DRAWER_OPENED)
+          showOrHideDesktopCourseDrawer(COURSE_DRAWER_OPENED)
+        } else {
+          showOrHideDesktopCourseDrawer(state)
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+          const drawer = $(`#${DESKTOP_COURSE_DRAWER_ID}`)
+          const mainSection = $(`#${MAIN_COURSE_SECTION_ID}`)
+
+          drawer.on("shown.bs.collapse", (event) => {
+            if (event.target.id !== DESKTOP_COURSE_DRAWER_ID) {
+              return;
+            }
+            mainSection.addClass("col-lg-9")
+            mainSection.removeClass("col-12")
+            setLocalStorageItem(COURSE_DRAWER_LOCAL_STORAGE_KEY, COURSE_DRAWER_OPENED)
+          })
+      
+          drawer.on("hidden.bs.collapse", (event) => {
+            if (event.target.id !== DESKTOP_COURSE_DRAWER_ID) {
+              return;
+            }
+            mainSection.addClass("col-12")
+            mainSection.removeClass("col-lg-9")
+            setLocalStorageItem(COURSE_DRAWER_LOCAL_STORAGE_KEY, COURSE_DRAWER_CLOSED)
+          })
+        })
+      }
+
+      function showOrHideDesktopCourseDrawer(state) {
+        const drawer = document.getElementById(DESKTOP_COURSE_DRAWER_ID)
+        const button = document.getElementById(COURSE_DRAWER_BTN_ID)
+        const mainSection = document.getElementById(MAIN_COURSE_SECTION_ID)
+
+        if (state === COURSE_DRAWER_OPENED) {
+          drawer.classList.add("show")
+          button.setAttribute("aria-expanded", "true")
+        } else {
+          drawer.classList.remove("show")
+          button.setAttribute("aria-expanded", "false")
+          mainSection.classList.remove("col-lg-9")
+          mainSection.classList.add("col-12")
+        }
+      }
+
+      function setOrGetLocalStorageItem(action,key,value) {
+        try {
+          
+          if (typeof Storage !== "undefined") {
+            if (action === "set") {
+              localStorage.setItem(key, value)
+              return true
+            } else {
+              return localStorage.getItem(key)
+            }
+          }
+          console.error("This browser has no web storage support.")
+          return null
+        } catch (e) {
+          console.error("An exception occurred while storing/fetching data in/from localstorage: ", e)
+          return null
+        }
+      }
+
+      function setLocalStorageItem(key, value) {
+        return setOrGetLocalStorageItem("set", key, value)
+      }
+      
+      function getLocalStorageItem(key){
+        return setOrGetLocalStorageItem("get", key)
+      }
+
+      initializeDesktopCourseDrawerState();
+    }
+    catch(e){
+      console.error("Something went wrong in maintaining/toggling course drawer state", e)
+    }
+  </script>
+
+  
+
+<script>
+function expandNav(e,t){t.classList.add("show"),e.querySelector(".course-nav-section-toggle, video-tab-toggle-section").setAttribute("aria-expanded","true")}function courseNav(){document.querySelectorAll(".course-nav, .transcript-header").forEach(e=>{e.querySelectorAll(".nav-link").forEach(e=>{const t=e.getAttribute("href")?e.getAttribute("href"):"";if(t.replace(/\/$/,"")===window.location.pathname.replace(/\/$/,"")){e.classList.add("active");const s=e.closest(".course-nav-parent");s?.classList.add("active");const o=e.dataset.uuid,t=e.closest(".course-nav-list-item"),n=t?.querySelector(".collapse"),i=Array.prototype.filter.call(document.querySelectorAll(".course-nav-section-toggle"),e=>e.dataset.uuid===o);t&&n&&i.length>0&&expandNav(t,n)}});const t=e.querySelector("a.nav-link.active");e.querySelectorAll(".course-nav-list-item").forEach(e=>{const n=e.querySelector(".collapse");n&&n.contains(t)&&expandNav(e,n)})})}courseNav()
+</script>
+
+  
+
+<script>
+(()=>{var e=()=>document.querySelectorAll("#course-content-section table"),t=()=>document.getElementById("course-content-section");function n(){const o=e(),n=t();if(!n)return;if(!window.ResizeObserver)return;const i=new ResizeObserver(()=>s());i.observe(n),o.forEach(e=>{const t=e.getElementsByTagName("th"),n=e.querySelectorAll("table tr");n.forEach(e=>{const n=e.querySelectorAll("td");n.forEach((e,s)=>{t.length>=s+1&&(n[s].dataset.title=t[s].innerText.trim().concat(": "))})})})}function s(){const s=e(),n=t();if(!n)return;s.forEach(e=>{const t=n.getBoundingClientRect(),o=+(e.dataset.minWidth??0);t.width>o&&e.classList.remove("mobile-table");const s=e.getBoundingClientRect();s.right>t.right&&(e.dataset.minWidth=`${s.width}`,e.classList.add("mobile-table"))})}n()})()
+</script>
+
+</body>
+
+</html>

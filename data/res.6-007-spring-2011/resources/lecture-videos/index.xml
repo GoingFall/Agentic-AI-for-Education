@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lecture Videos on MIT OpenCourseWare</title>
+    <link>/resources/lecture-videos/</link>
+    <description>Recent content in Lecture Videos on MIT OpenCourseWare</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="/resources/lecture-videos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture 1: Introduction</title>
+      <link>/resources/lecture-1-introduction/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-1-introduction/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Course format and overview; Demonstration of a feedback system used to stabilize an inverted pendulum; Demonstration of digital signal processing used to remove distortions and background noise from a musical recording. Mathematical representation of signals and systems.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 10: Discrete-Time Fourier Series</title>
+      <link>/resources/lecture-10-discrete-time-fourier-series/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-10-discrete-time-fourier-series/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Response of discrete-time LTI systems to complex exponentials; Representation of periodic signals: linear combinations of harmonically related complex exponentials; Similarities and differences with continuous time; Analysis and synthesis equations; Approximation of periodic signals and convergence; Discrete-time Fourier representation of aperiodic signals: the discrete-time Fourier transform; Fourier transform representation of periodic signals.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 11: Discrete-Time Fourier Transform</title>
+      <link>/resources/lecture-11-discrete-time-fourier-transform/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-11-discrete-time-fourier-transform/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Representation of aperiodic signals; Discrete-time Fourier transform properties: periodicity, linearity, symmetry, time shifting and frequency shifting, differencing and summation, time and frequency scaling, differentiation in frequency, Parseval&amp;rsquo;s relation; Convolution and modulation, duality, polar representation; Calculation of frequency and impulse responses; Summary of relationships between continuous-time and discrete-time Fourier series and Fourier transforms.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 12: Filtering</title>
+      <link>/resources/lecture-12-filtering/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-12-filtering/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Relation to the convolution property of Fourier transform; Ideal and non ideal frequency-selective filters: frequency-domain and time-domain characteristics; Continuous-time frequency-selective filters described by differential equations; RC low-pass and high-pass filters; Discrete-time frequency-selective filters described by difference equations; Moving average filters; Recursive discrete-time filters; Demonstration: a look at filtering in a commercial audio control room.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 13: Continuous-Time Modulation</title>
+      <link>/resources/lecture-13-continuous-time-modulation/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-13-continuous-time-modulation/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Sinusoidal amplitude modulation; Synchronous and asynchronous demodulation; Implementation of frequency-selective filters with variable-center frequencies; Communication applications (frequency-division multiplexing and single-side band modulation).&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 14: Demonstration of Amplitude Modulation</title>
+      <link>/resources/lecture-14-demonstration-of-amplitude-modulation/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-14-demonstration-of-amplitude-modulation/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Demonstration: time-domain and frequency-domain signals with signal generator, oscilloscope, and spectrum analyzer; Demonstration: time and frequency scaling with musical tones; Demonstration: amplitude modulation with sinusoidal, triangular, and square-wave carrier signals; Demonstration: effect of changing the percent of modulation in both time and frequency domains; Demonstration: amplitude modulation signals in an AM radio receiver.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructors:&lt;/strong&gt; Prof. Alan V. Oppenheim; Prof. Sandy Hill&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 15: Discrete-Time Modulation</title>
+      <link>/resources/lecture-15-discrete-time-modulation/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-15-discrete-time-modulation/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Amplitude modulation with complex exponential and sinusoidal carriers; Use of amplitude modulation to convert a fixed filter to a variable filter; Pulse amplitude modulation for continuous-time signals; Preview of sampling.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 16: Sampling</title>
+      <link>/resources/lecture-16-sampling/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-16-sampling/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; The sampling theorem: representation of a continuous-time signal by its samples; Aliasing: the effect of undersampling; Demonstration: sampling and reconstruction of the output of a sinusoidal oscillator; Demonstration: some practical uses of aliasing—a visit with Dr. Harold Edgerton at the MIT Strobe Laboratory.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructors:&lt;/strong&gt; Prof. Alan V. Oppenheim; Dr. Harold Edgerton&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 17: Interpolation</title>
+      <link>/resources/lecture-17-interpolation/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-17-interpolation/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Reconstruction of a signal from its samples as a process of interpolation; Band limited interpolation; Approximate interpolation: zero-order hold, first-order hold (linear interpolation); Illustration of sampling and interpolation for pictures; The use of sampling in computer processing of signals.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 18: Discrete-Time Processing of Continuous-Time Signals</title>
+      <link>/resources/lecture-18-discrete-time-processing-of-continuous-time-signals/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-18-discrete-time-processing-of-continuous-time-signals/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Conversion of continuous-time to discrete-time signals through sampling; Digital differentiaion, half-sample delay; Demonstration: sampling a continuous-time signal, filtering sequences with a low-pass filter, reconstructing a continuous-time signal using bandlimited interpolation.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 19: Discrete-Time Sampling</title>
+      <link>/resources/lecture-19-discrete-time-sampling/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-19-discrete-time-sampling/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Comparison of discrete-time and continuous-time sampling; Down-sampling (decimation) and up-sampling (reconstruction of original sequence); Use of decimation/interpolation for sampling rate conversion; Sampling in the frequency domain.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 2: Signals and Systems: Part I</title>
+      <link>/resources/lecture-2-signals-and-systems-part-i/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-2-signals-and-systems-part-i/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Mathematical representation of signals and systems; Transformation of the independent variable of a signal (reflection, time shifts, and scaling); Sinusoidal signals: real and complex exponentials; Periodicity properties of discrete-time complex exponentials.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 20: The Laplace Transform</title>
+      <link>/resources/lecture-20-the-laplace-transform/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-20-the-laplace-transform/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Relationship to the Fourier transform; Class of rational transforms and the concept of poles and zeroes; Region of convergence (ROC); Inverse transforms using partial fraction expansion.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 21: Continuous-Time Second-Order Systems</title>
+      <link>/resources/lecture-21-continuous-time-second-order-systems/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-21-continuous-time-second-order-systems/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Geometric evaluation of frequency responses from pole-zero plots; Difference equation and system function for first-order and second-order systems; Effect of properties; Overdamped and underdamped systems; Analysis and characteristics of second-order systems; Demonstration of use in speech synthesis.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 22: The z-Transform</title>
+      <link>/resources/lecture-22-the-z-transform/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-22-the-z-transform/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Relationship to the discrete-time Fourier transform; Region of convergence (ROC); The inverse z-transform; Geometric evaluation of the Fourier transform from the pole-zero plot, first-order and second-order systems; Analysis and characterization of LTI systems using z-transforms.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 23: Mapping Continuous-Time Filters to Discrete-Time Filters</title>
+      <link>/resources/lecture-23-mapping-continuous-time-filters-to-discrete-time-filters/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-23-mapping-continuous-time-filters-to-discrete-time-filters/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Properties of the z-transform; Analyzing systems characterized by linear constant-coefficient difference equations; Transformations between continuous-time and discrete-time systems, impulse invariance, backward difference approximation to differential equations.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 24: Butterworth Filters</title>
+      <link>/resources/lecture-24-butterworth-filters/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-24-butterworth-filters/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Parameters, cutoff frequency and filter order; Distribution of poles of continuous-time Butterworth filters; Design of a discrete-time Butterwoth filter using impulse invariance; The bilinear transformation; Design of a discrete-time Butterworth filter using the bilinear transformation.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 25: Feedback</title>
+      <link>/resources/lecture-25-feedback/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-25-feedback/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Applications and consequences: inverse system design, compensation for non ideal elements, stabilization of unstable systems, tracking, destabilization caused by feedback; Basic feedback equation for continuous-time and discrete-time systems; Root-locus analysis (equation for closed-loop poles, end points, angle criterion, properties); Gain and phase margins.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 26: Feedback Example: The Inverted Pendulum</title>
+      <link>/resources/lecture-26-feedback-example-the-inverted-pendulum/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-26-feedback-example-the-inverted-pendulum/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Analysis of the open loop system and exploration of choices for the feedback dynamics; Behavior description through a second-order linear constant-coefficient differential equation; Root-locus analysis; Combination of proportional and derivative feedback to achieve pendulum stability; Demonstration: inverted pendulum on a track, effect of modifying dynamics, effect of modifying damaging characteristics.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 3: Signals and Systems: Part II</title>
+      <link>/resources/lecture-3-signals-and-systems-part-ii/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-3-signals-and-systems-part-ii/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Unit step and unit impulse signals; Block-diagram representations and interconnections of systems; System properties: memory, invertibility and inverse systems, causality, stability, time invariance, linearity.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 4: Convolution</title>
+      <link>/resources/lecture-4-convolution/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-4-convolution/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Representation of signals in terms of impulses; Convolution sum representation for discrete-time linear, time-invariant (LTI) systems: convolution integral representation for continuous-time LTI systems; Properties: commutative, associative, and distributive.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 5: Properties of Linear, Time-Invariant Systems</title>
+      <link>/resources/lecture-5-properties-of-linear-time-invariant-systems/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-5-properties-of-linear-time-invariant-systems/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Properties of linear, time-invariant systems, including the commutative, associative, and distributive properties. Also covers operational definition of impulses; cascade systems; parallel combinations; properties of convolution; discrete-time accumulator; first-order continuous-time system.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 6: Systems Represented by Differential Equations</title>
+      <link>/resources/lecture-6-systems-represented-by-differential-equations/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-6-systems-represented-by-differential-equations/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; First-order differential and difference equations; Solution as a sum of particular and homogeneous terms; Auxiliary conditions and relation to system linearity, causality, and time-invariance; Block-diagram representations of LTI systems described by difference equations and differential equations using adders, coefficient multipliers, and delay elements (discrete-time) or integrators (continuous-time).&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 7: Continuous-Time Fourier Series</title>
+      <link>/resources/lecture-7-continuous-time-fourier-series/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-7-continuous-time-fourier-series/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Response of continuous-time LTI systems to complex exponentials: the eigenfunction property; Representation of periodic signals as linear combinations of harmonically related complex exponentials; Fourier series for continuous time: the analysis and synthesis equations; Example: symmetric and anti-symmetric periodic square wave; Approximation of periodic signals; Fourier series convergence.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 8: Continuous-Time Fourier Transform</title>
+      <link>/resources/lecture-8-continuous-time-fourier-transform/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-8-continuous-time-fourier-transform/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Derivation of the Fourier transform representation of aperiodic signals; Synthesis equation (inverse Fourier transform) and analysis equation (Fourier transform); Periodic signals: coefficients as samples of the transform of one period; Relationships between Fourier series and Fourier transforms; Fourier transform representation of periodic signals; Examples.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 9: Fourier Transform Properties</title>
+      <link>/resources/lecture-9-fourier-transform-properties/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-9-fourier-transform-properties/data.json</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Topics covered:&lt;/strong&gt; Linearity, symmetry, time shifting, differentiation and integration, time and frequency scaling, duality, Parseval&amp;rsquo;s relation; Convolution and modulation properties and the basis they provide for filtering, modulation, and sampling; Polar representation, magnitude and phase, Bode plots; Use of transform methods to analyze LTI systems characterized by differential and difference equations; Cascade and parallel form realization: first- and second-order systems.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instructor:&lt;/strong&gt; Prof. Alan V. Oppenheim&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Video Lectures</title>
+      <link>/video_galleries/video-lectures/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/video_galleries/video-lectures/data.json</guid>
+      <description>&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-1-introduction/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/KJnAy6hzetw/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 1: Introduction&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-2-signals-and-systems-part-i/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/6xaaeop7gJ8/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 2: Signals and Systems: Part I&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-3-signals-and-systems-part-ii/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/jGk3w1b7UXQ/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 3: Signals and Systems: Part II&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-4-convolution/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/_vyke3vF4Nk/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 4: Convolution&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-5-properties-of-linear-time-invariant-systems/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/mC3TiBJiCsY/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 5: Properties of Linear, Time-Invariant Systems&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-6-systems-represented-by-differential-equations/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/c6jKux_RkqI/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 6: Systems Represented by Differential Equations&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-7-continuous-time-fourier-series/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/nuzA75DpSuw/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 7: Continuous-Time Fourier Series&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-8-continuous-time-fourier-transform/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/3UkGd3LK2NY/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 8: Continuous-Time Fourier Transform&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-9-fourier-transform-properties/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/D1WF9YKqf3o/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 9: Fourier Transform Properties&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-10-discrete-time-fourier-series/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/TkMsVwzd1C0/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 10: Discrete-Time Fourier Series&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-11-discrete-time-fourier-transform/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/HKMY-8BqWWw/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 11: Discrete-Time Fourier Transform&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-12-filtering/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/P5Ce9tbK86M/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 12: Filtering&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-13-continuous-time-modulation/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/UIgA0czNj5g/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 13: Continuous-Time Modulation&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-14-demonstration-of-amplitude-modulation/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/KT3yNuY_FPM/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 14: Demonstration of Amplitude Modulation&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-15-discrete-time-modulation/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/GrnYlDAsmuA/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 15: Discrete-Time Modulation&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-16-sampling/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/P3eLer1edx8/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 16: Sampling&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-17-interpolation/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/_WV4JlBOQro/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 17: Interpolation&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-18-discrete-time-processing-of-continuous-time-signals/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/Q7aZNgY18b4/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 18: Discrete-Time Processing of Continuous-Time Signals&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-19-discrete-time-sampling/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/mmkOAMOw73U/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 19: Discrete-Time Sampling&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-20-the-laplace-transform/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/pSN7t79RxC4/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 20: The Laplace Transform&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-21-continuous-time-second-order-systems/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/8g4UudyOetE/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 21: Continuous-Time Second-Order Systems&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-22-the-z-transform/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/0Gat_aSzi5Y/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 22: The z-Transform&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-23-mapping-continuous-time-filters-to-discrete-time-filters/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/z8sXXQxcmN4/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 23: Mapping Continuous-Time Filters to Discrete-Time Filters&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-24-butterworth-filters/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/4Q1fWMxVDZY/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 24: Butterworth Filters&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-25-feedback/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/S7MG1hgn0dY/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 25: Feedback&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;mb-2 border-gray rounded video-gallery-card&#34;&gt;&#xA;  &lt;a class=&#34;video-link&#34; href=&#34;../../resources/lecture-26-feedback-example-the-inverted-pendulum/index.html&#34;&gt;&#xA;    &lt;div class=&#34;inner-container&#34;&gt;&#xA;      &lt;div class=&#34;left-col&#34;&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;https://img.youtube.com/vi/D3bblng-Kcc/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;right-col&#34;&gt;&#xA;        &lt;h5 class=&#34;video-title&#34;&gt;Lecture 26: Feedback Example: The Inverted Pendulum&lt;/h5&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

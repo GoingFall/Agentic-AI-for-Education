@@ -1,0 +1,23 @@
+{
+  "course_title":"Signals and Systems",
+  "course_description":"This course was developed in 1987 by the MIT Center for Advanced Engineering Studies. It was designed as a distance-education course for engineers and scientists in the workplace.\n\nSignals and Systems is an introduction to analog and digital signal processing, a topic that forms an integral part of engineering systems in many diverse areas, including seismic data processing, communications, speech processing, image processing, defense electronics, consumer electronics, and consumer products.\n\nThe course presents and integrates the basic concepts for both continuous-time and discrete-time signals and systems. Signal and system representations are developed for both time and frequency domains. These representations are related through the Fourier transform and its generalizations, which are explored in detail. Filtering and filter design, modulation, and sampling for both analog and digital systems, as well as exposition and demonstration of the basic concepts of feedback systems for both analog and digital systems, are discussed and illustrated.\n",
+  "course_description_html":"<p>This course was developed in 1987 by the MIT Center for Advanced Engineering Studies. It was designed as a distance-education course for engineers and scientists in the workplace.</p>\n<p>Signals and Systems is an introduction to analog and digital signal processing, a topic that forms an integral part of engineering systems in many diverse areas, including seismic data processing, communications, speech processing, image processing, defense electronics, consumer electronics, and consumer products.</p>\n<p>The course presents and integrates the basic concepts for both continuous-time and discrete-time signals and systems. Signal and system representations are developed for both time and frequency domains. These representations are related through the Fourier transform and its generalizations, which are explored in detail. Filtering and filter design, modulation, and sampling for both analog and digital systems, as well as exposition and demonstration of the basic concepts of feedback systems for both analog and digital systems, are discussed and illustrated.</p>\n",
+  "site_uid":"5a3a48eb-e83d-4e0f-a2f6-a11440916afa",
+  "legacy_uid":"d24126a5-39a3-cedd-0038-b1201299b72e","instructors": [{
+    "first_name":"Alan",
+    "last_name":"Oppenheim",
+    "middle_initial":"V.",
+    "salutation":"Prof.",
+    "title":"Prof. Alan V. Oppenheim"}],"department_numbers":["6"],
+  "learning_resource_types":["Lecture Notes","Lecture Videos","Problem Sets","Problem Set Solutions"],
+  "topics":[["Engineering","Electrical Engineering","Signal Processing"],["Engineering","Electrical Engineering","Digital Systems"],["Engineering","Systems Engineering","Computational Modeling and Simulation"]],
+  "mit_learn_topics":null,
+  "primary_course_number":"RES.6-007",
+  "extra_course_numbers":"",
+  "term":"Spring",
+  "year":"2011",
+  "level":["Undergraduate"],
+  "hide_download":false,
+  "image_src":"./static_resources/a31f0415c6d6d937cc662b4ed8cbbfe4_res-6-007s11.jpg",
+  "course_image_metadata":{"content_type":"resource","description":"Time-domain illustration of upsampling from lecture 19. (Image courtesy of Professor Alan Oppenheim. Used with permission.) ","draft":false,"file":"/courses/res-6-007-signals-and-systems-spring-2011/a31f0415c6d6d937cc662b4ed8cbbfe4_res-6-007s11.jpg","file_size":44768,"file_type":"image/jpeg","image_metadata":{"caption":"Time-domain illustration of upsampling from Lec #19. (Image courtesy of Professor Alan Oppenheim. Used with permission.)","credit":"","image-alt":"Diagram illustrating upsampling."},"iscjklanguage":false,"learning_resource_types":[],"license":"https://creativecommons.org/licenses/by-nc-sa/4.0/","ocw_type":"OCWImage","resourcetype":"Image","title":"res-6-007s11.jpg","uid":"a31f0415-c6d6-d937-cc66-2b4ed8cbbfe4"}}
+
