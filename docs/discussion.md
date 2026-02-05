@@ -292,21 +292,7 @@ skills/
 
 #### 触发与加载方式（本项目实现要点）
 
-```mermaid
-sequenceDiagram
-  participant User
-  participant Runtime
-  participant Skills
-  participant Agent
-
-  User->>Runtime: 输入问题
-  Runtime->>Skills: 扫描 skills/*/SKILL.md
-  Skills->>Runtime: frontmatter: trigger_keywords, allowed_tools
-  Runtime->>Runtime: 匹配当前输入与 trigger
-  Runtime->>Agent: 注入选用 Skill 的 SKILL.md + 筛出 Tools
-  Agent->>Agent: LLM 决定调用 RAG/图谱
-  Agent->>User: 回答 + 引用 + 推荐
-```
+端到端流程（含 Skill 选用与 RAG/图谱调用）见 §4「产品形态与演示脚本」中的总览图。
 
 | 机制 | 在本项目中的做法 |
 |------|-------------------|
@@ -389,13 +375,19 @@ flowchart TD
 sequenceDiagram
   participant Student as 学生
   participant Web as Web界面_Dash
+  participant Runtime as Runtime
+  participant Skills as Skills
   participant Agent as Agent
   participant RAG as RAG
   participant KG as 知识图谱
 
   Student->>Web: 输入概念/题目问题
-  Web->>Agent: 转发
-  Agent->>Agent: 决定调用哪些工具
+  Web->>Runtime: 转发
+  Runtime->>Skills: 扫描 skills/*/SKILL.md
+  Skills->>Runtime: frontmatter: trigger_keywords, allowed_tools
+  Runtime->>Runtime: 匹配当前输入与 trigger
+  Runtime->>Agent: 注入选用 Skill 的 SKILL.md + 筛出 Tools
+  Agent->>Agent: LLM 决定调用哪些工具
   Agent->>RAG: 检索课程材料
   RAG->>Agent: 相关片段+来源
   Agent->>KG: 可选: 查先修/推荐
