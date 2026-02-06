@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task4 核心 Agent 系统架构图</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style>
+    body { font-family: sans-serif; margin: 1rem; background: #f8f9fa; }
+    h1 { font-size: 1.25rem; }
+    .mermaid { background: #fff; padding: 1rem; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Task4 核心 Agent 系统架构图</h1>
+  <p>下图对应 task4_实现说明.md 中的 Mermaid 架构，便于截图或演示。</p>
+  <div class="mermaid">
+flowchart LR
+  subgraph agent_core [Agent 核心]
+    LLM[OpenRouter LLM]
+    Exec[AgentExecutor]
+    Session[ChatMessageHistory]
+  end
+  subgraph tools [工具层]
+    RAG[RAG 检索工具]
+    KG[知识图谱查询工具]
+  end
+  subgraph skill_mgr [Skill 管理]
+    Loader[Skill 加载器]
+    Trigger[触发与选择]
+    Bind[工具绑定]
+  end
+  Session --> Exec
+  LLM --> Exec
+  Bind --> Exec
+  Exec --> RAG
+  Exec --> KG
+  Loader --> Trigger
+  Trigger --> Bind
+  RAG --> Chroma[Chroma]
+  KG --> Neo4j[Neo4j]
+  </div>
+  <script>mermaid.initialize({ startOnLoad: true });</script>
+</body>
+</html>

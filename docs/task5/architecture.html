@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task5 教育 Skill 与协同机制 - 数据流与架构图</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style>
+    body { font-family: sans-serif; margin: 1rem; background: #f8f9fa; }
+    h1 { font-size: 1.25rem; }
+    .mermaid { background: #fff; padding: 1rem; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Task5 教育 Skill 与协同机制 - 数据流与架构图</h1>
+  <p>下图对应 task5_实现说明.md 中的 Mermaid 数据流，便于截图或演示。</p>
+  <div class="mermaid">
+flowchart LR
+  subgraph input [输入]
+    UM[用户消息]
+    UC[可选 user_context]
+  end
+  subgraph run [run.py]
+    SEL[select_skills_for_input]
+    BIND[filter_tools_by_allowed]
+    BLD[build_system_prompt]
+    INV[core.invoke]
+  end
+  subgraph output [输出]
+    R[reply]
+    SID[session_id]
+    SIDS[selected_skill_ids]
+  end
+  UM --> SEL
+  SEL --> BIND
+  SEL --> BLD
+  UC --> BLD
+  BLD --> INV
+  BIND --> INV
+  UM --> INV
+  INV --> R
+  INV --> SID
+  SEL --> SIDS
+  </div>
+  <script>mermaid.initialize({ startOnLoad: true });</script>
+</body>
+</html>

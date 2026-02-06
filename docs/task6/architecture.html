@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task6 Web 界面数据流图</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style>
+    body { font-family: sans-serif; margin: 1rem; background: #f8f9fa; }
+    h1 { font-size: 1.25rem; }
+    .mermaid { background: #fff; padding: 1rem; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Task6 Web 界面数据流图</h1>
+  <p>下图对应 task6_实现说明.md 中的 Mermaid 数据流，便于截图或演示。</p>
+  <div class="mermaid">
+flowchart TB
+  subgraph dash [Dash应用]
+    Layout[布局_侧栏与主区]
+    Chat[对话消息区]
+    Input[输入与发送]
+    Sessions[会话列表]
+  end
+  subgraph backend [同进程后端]
+    Invoke[invoke_with_skills]
+    Store[session_store]
+    Meta[session_meta]
+  end
+  Input --> Invoke
+  Invoke --> Store
+  Invoke --> Meta
+  Invoke --> Chat
+  Sessions --> Meta
+  Layout --> Chat
+  Layout --> Input
+  Layout --> Sessions
+  </div>
+  <script>mermaid.initialize({ startOnLoad: true });</script>
+</body>
+</html>

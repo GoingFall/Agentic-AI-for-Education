@@ -1,0 +1,30 @@
+Task4 核心 Agent 系统开发 - 单元测试运行结果
+==============================================
+命令: python -m pytest tests/agent/ -v
+日期: 2026-02-06
+说明: 不依赖 Neo4j/Chroma/OpenRouter 的 Agent 与 Skill 测试
+
+--------------------------------------------
+
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-8.4.2, pluggy-1.5.0 -- C:\Users\10489\miniconda3\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Workspace\agent-edu
+plugins: anyio-4.11.0, langsmith-0.4.34
+collecting ... collected 7 items
+
+tests/agent/test_agent_core.py::test_build_agent_prompt PASSED           [ 14%]
+tests/agent/test_agent_core.py::test_create_executor_no_history PASSED   [ 28%]
+tests/agent/test_agent_core.py::test_load_agent_system_prompt PASSED     [ 42%]
+tests/agent/test_skill_loader.py::test_load_skills PASSED                [ 57%]
+tests/agent/test_skill_loader.py::test_get_skill PASSED                  [ 71%]
+tests/agent/test_skill_loader.py::test_select_skills_trigger PASSED      [ 85%]
+tests/agent/test_skill_loader.py::test_filter_tools_by_allowed PASSED    [100%]
+
+============================== warnings summary ===============================
+C:\Users\10489\miniconda3\Lib\site-packages\pydantic\v1\typing.py:68
+  DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 
+  'typing.ForwardRef._evaluate' is deprecated ...
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 7 passed, 7 warnings in 5.47s ========================
