@@ -6,8 +6,10 @@ langchain-community>=0.3.0
 # 向量库（Chroma）
 chromadb>=0.5.0
 
-# PDF 预处理（§3.3.1：PyMuPDF / pdfplumber / PyPDF）
+# PDF 预处理（§3.3.1：PyMuPDF 默认；可选 PDF-Extract-Kit 需单独克隆并设置 PDF_EXTRACT_KIT_ROOT）
 pymupdf>=1.24.0
+# 使用 PDF-Extract-Kit 后端时需生成临时 config，依赖 PyYAML
+PyYAML>=6.0
 # pdfplumber>=0.11.0
 # pypdf>=4.0.0
 
@@ -24,3 +26,6 @@ neo4j>=5.0.0
 
 # 演示前端（可选：Dash）
 # dash>=2.14.0
+
+# 展示用（可选：scripts/show_task2_results.py 表格与 HTML 导出）
+# rich>=13.0.0

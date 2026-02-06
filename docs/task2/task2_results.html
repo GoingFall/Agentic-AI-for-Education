@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+.r1 {color: #008080; text-decoration-color: #008080}
+.r2 {color: #008080; text-decoration-color: #008080; font-weight: bold}
+.r3 {font-style: italic}
+.r4 {color: #800080; text-decoration-color: #800080; font-weight: bold}
+.r5 {color: #008000; text-decoration-color: #008000}
+.r6 {color: #7f7f7f; text-decoration-color: #7f7f7f}
+.r7 {color: #008000; text-decoration-color: #008000; font-weight: bold}
+.r8 {color: #808000; text-decoration-color: #808000; font-weight: bold}
+.r9 {color: #000080; text-decoration-color: #000080}
+.r10 {color: #000080; text-decoration-color: #000080; font-weight: bold}
+.r11 {font-weight: bold}
+body {
+    color: #000000;
+    background-color: #ffffff;
+}
+</style>
+</head>
+<body>
+    <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit"><span class="r1">+-----------------------------------------------------------------------------+</span>
+<span class="r1">|</span> <span class="r2">任务 2：数据预处理与知识库 — 运行结果展示</span>                                   <span class="r1">|</span>
+<span class="r1">+-----------------------------------------------------------------------------+</span>
+<span class="r3">                       文档索引 (config/doc_index.json)                        </span>
++-----------------------------------------------------------------------------+
+|<span class="r4"> doc_id   </span>|<span class="r4"> doc_type </span>|<span class="r4"> lecture_index </span>|<span class="r4"> title             </span>|<span class="r4"> related           </span>|
+|----------+----------+---------------+-------------------+-------------------|
+|<span class="r1"> lec04    </span>|<span class="r5"> lecture  </span>|       4       | Lecture 4,        |<span class="r6"> hw→hw04           </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               | Convolution       |<span class="r6"> sol→hw04_sol      </span>|
+|<span class="r1"> hw04_sol </span>|<span class="r5"> solution </span>|       4       | Problem Set 4     |<span class="r6"> lec→lec04 hw→hw04 </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               | Solutions         |<span class="r6">                   </span>|
+|<span class="r1"> lec03    </span>|<span class="r5"> lecture  </span>|       3       | Lecture 3,        |<span class="r6"> hw→hw03           </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               | Signals and       |<span class="r6"> sol→hw03_sol      </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               | Systems: Part II  |<span class="r6">                   </span>|
+|<span class="r1"> hw05_sol </span>|<span class="r5"> solution </span>|       5       | Problem Set 5     |<span class="r6"> lec→lec05 hw→hw05 </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               | Solutions         |<span class="r6">                   </span>|
+|<span class="r1"> hw03     </span>|<span class="r5"> homework </span>|       3       | Problem Set 3     |<span class="r6"> lec→lec03         </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               |                   |<span class="r6"> sol→hw03_sol      </span>|
+|<span class="r1"> hw05     </span>|<span class="r5"> homework </span>|       5       | Problem Set 5     |<span class="r6"> lec→lec05         </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               |                   |<span class="r6"> sol→hw05_sol      </span>|
+|<span class="r1"> hw02     </span>|<span class="r5"> homework </span>|       2       | Problem Set 2     |<span class="r6"> lec→lec02         </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               |                   |<span class="r6"> sol→hw02_sol      </span>|
+|<span class="r1"> hw03_sol </span>|<span class="r5"> solution </span>|       3       | Problem Set 3     |<span class="r6"> lec→lec03 hw→hw03 </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               | Solutions         |<span class="r6">                   </span>|
+|<span class="r1"> lec05    </span>|<span class="r5"> lecture  </span>|       5       | Lecture 5,        |<span class="r6"> hw→hw05           </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               | Properties of     |<span class="r6"> sol→hw05_sol      </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               | Linear, Time-In   |<span class="r6">                   </span>|
+|<span class="r1"> hw04     </span>|<span class="r5"> homework </span>|       4       | Problem Set 4     |<span class="r6"> lec→lec04         </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               |                   |<span class="r6"> sol→hw04_sol      </span>|
+|<span class="r1"> hw01     </span>|<span class="r5"> homework </span>|       1       | Problem Set 1     |<span class="r6"> lec→lec01         </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               |                   |<span class="r6"> sol→hw01_sol      </span>|
+|<span class="r1"> lec02    </span>|<span class="r5"> lecture  </span>|       2       | Lecture 2,        |<span class="r6"> hw→hw02           </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               | Signals and       |<span class="r6"> sol→hw02_sol      </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               | Systems: Part I   |<span class="r6">                   </span>|
+|<span class="r1"> hw02_sol </span>|<span class="r5"> solution </span>|       2       | Problem Set 2     |<span class="r6"> lec→lec02 hw→hw02 </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               | Solutions         |<span class="r6">                   </span>|
+|<span class="r1"> lec01    </span>|<span class="r5"> lecture  </span>|       1       | Lecture 1,        |<span class="r6"> hw→hw01           </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               | Introduction      |<span class="r6"> sol→hw01_sol      </span>|
+|<span class="r1"> hw01_sol </span>|<span class="r5"> solution </span>|       1       | Problem Set 1     |<span class="r6"> lec→lec01 hw→hw01 </span>|
+|<span class="r1">          </span>|<span class="r5">          </span>|               | Solutions         |<span class="r6">                   </span>|
++-----------------------------------------------------------------------------+
+<span class="r5">已索引 </span><span class="r7">15</span><span class="r5"> 个文档，已保存到 D:\Workspace\agent-edu\config\doc_index.json</span>
+
+<span class="r3">                            文档结构统计 (前 6 个)                             </span>
++-----------------------------------------------------------------------------+
+|<span class="r8"> file_name              </span>|<span class="r8"> doc_id   </span>|<span class="r8"> doc_type </span>|<span class="r8"> 字符数 </span>|<span class="r8"> 行数 </span>|<span class="r8"> h1 / h2 / h3 </span>|
+|------------------------+----------+----------+--------+------+--------------|
+| 0400ba59406d52d94c079d |<span class="r1"> lec04    </span>|<span class="r5"> lecture  </span>|  12546 |  230 |  1 / 14 / 7  |
+| 999281                 |<span class="r1">          </span>|<span class="r5">          </span>|        |      |              |
+| 0a374ee9df1ba2a9cd9858 |<span class="r1"> hw04_sol </span>|<span class="r5"> solution </span>|  16233 |  429 |  1 / 2 / 12  |
+| 07c735                 |<span class="r1">          </span>|<span class="r5">          </span>|        |      |              |
+| 13f950129c8ddfd54c7c0d |<span class="r1"> lec03    </span>|<span class="r5"> lecture  </span>|   9334 |  281 |  1 / 6 / 22  |
+| 91edfd                 |<span class="r1">          </span>|<span class="r5">          </span>|        |      |              |
+| 1e8612f9dfd2b6b1c7fc29 |<span class="r1"> hw05_sol </span>|<span class="r5"> solution </span>|  22075 |  382 |  2 / 3 / 25  |
+| 3d862e                 |<span class="r1">          </span>|<span class="r5">          </span>|        |      |              |
+| 5ef8ecc5a7d42a418c1db0 |<span class="r1"> hw03     </span>|<span class="r5"> homework </span>|  17505 |  295 |  2 / 3 / 23  |
+| 14c951                 |<span class="r1">          </span>|<span class="r5">          </span>|        |      |              |
+| 7b78bd1fa3c324d9fc38d2 |<span class="r1"> hw05     </span>|<span class="r5"> homework </span>|   6636 |  127 |  1 / 2 / 13  |
+| cd4712                 |<span class="r1">          </span>|<span class="r5">          </span>|        |      |              |
++-----------------------------------------------------------------------------+
+
+<span class="r9">+--------------------------------- </span><span class="r10">测试结果</span><span class="r9"> ----------------------------------+</span>
+<span class="r9">|</span> 单元测试 (pytest)                                                           <span class="r9">|</span>
+<span class="r9">+-----------------------------------------------------------------------------+</span>
+  <span class="r11">======================== </span><span class="r2">10</span><span class="r11"> passed, </span><span class="r2">1</span><span class="r11"> skipped in </span><span class="r2">0.</span><span class="r11">06s </span>
+<span class="r11">========================</span>
+
+</code></pre>
+</body>
+</html>

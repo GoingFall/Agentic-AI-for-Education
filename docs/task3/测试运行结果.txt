@@ -1,0 +1,48 @@
+========== Task3 相关脚本与单元测试运行结果 ==========
+
+------ 1. python scripts/build_section_chunk_map.py ------
+Wrote D:\Workspace\agent-edu\config\section_chunk_map.json (15 documents).
+
+------ 2. python scripts/export_section_structure_html.py ------
+Wrote D:\Workspace\agent-edu\docs\task2\section_structure.html
+
+------ 3. python scripts/report_dedup.py ------
+总切片数: 1000
+重复切片数: 286
+重复率: 28.60%
+去重后数量: 714
+
+重复对样例（前 5 个，显示 doc_id / chunk_index）:
+  [22] lec04 chunk 22 <-> [47] lec04 chunk 47
+  [53] hw04_sol chunk 5 <-> [93] hw04_sol chunk 45
+  [56] hw04_sol chunk 8 <-> [97] hw04_sol chunk 49
+  [57] hw04_sol chunk 9 <-> [98] hw04_sol chunk 50
+  [87] hw04_sol chunk 39 <-> [99] hw04_sol chunk 51
+
+报告已写入 D:\Workspace\agent-edu\docs\task2\dedup_report.txt
+
+------ 4. python scripts/report_quality.py ------
+Wrote D:\Workspace\agent-edu\docs\task2\quality_report.json
+Wrote D:\Workspace\agent-edu\docs\task2\quality_report.md
+
+------ 5. pytest tests/test_splitter.py tests/test_doc_index.py tests/test_md_loader.py tests/test_knowledge_graph.py -v ------
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-8.4.2, pluggy-1.5.0 -- C:\Users\10489\miniconda3\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Workspace\agent-edu
+plugins: anyio-4.11.0, langsmith-0.4.34
+collecting ... collected 11 items
+
+tests/test_splitter.py::test_slice_document_and_metadata PASSED          [  9%]
+tests/test_doc_index.py::test_parse_md_filename PASSED                   [ 18%]
+tests/test_doc_index.py::test_hash_to_uuid PASSED                        [ 27%]
+tests/test_doc_index.py::test_build_doc_index_and_relations PASSED       [ 36%]
+tests/test_doc_index.py::test_analyze_md_structure PASSED                [ 45%]
+tests/test_doc_index.py::test_save_and_load_doc_index PASSED             [ 54%]
+tests/test_md_loader.py::test_clean_md_text PASSED                       [ 63%]
+tests/test_md_loader.py::test_parse_md_headings PASSED                   [ 72%]
+tests/test_md_loader.py::test_load_md PASSED                             [ 81%]
+tests/test_knowledge_graph.py::test_build_topics_and_exercises PASSED    [ 90%]
+tests/test_knowledge_graph.py::test_build_and_ingest_graph_from_index PASSED [100%]
+
+============================== 11 passed in 20.49s ==============================

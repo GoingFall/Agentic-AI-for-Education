@@ -1,0 +1,117 @@
+{
+  "by_doc": {
+    "lec04": {
+      "chunk_count": 48,
+      "avg_len": 487.5,
+      "min_len": 75,
+      "max_len": 764
+    },
+    "hw04_sol": {
+      "chunk_count": 97,
+      "avg_len": 551.0,
+      "min_len": 72,
+      "max_len": 791
+    },
+    "lec03": {
+      "chunk_count": 67,
+      "avg_len": 427.2,
+      "min_len": 50,
+      "max_len": 776
+    },
+    "hw05_sol": {
+      "chunk_count": 133,
+      "avg_len": 544.2,
+      "min_len": 75,
+      "max_len": 799
+    },
+    "hw03": {
+      "chunk_count": 113,
+      "avg_len": 506.9,
+      "min_len": 74,
+      "max_len": 748
+    },
+    "hw05": {
+      "chunk_count": 45,
+      "avg_len": 459.4,
+      "min_len": 74,
+      "max_len": 795
+    },
+    "hw02": {
+      "chunk_count": 64,
+      "avg_len": 461.9,
+      "min_len": 75,
+      "max_len": 747
+    },
+    "hw03_sol": {
+      "chunk_count": 76,
+      "avg_len": 542.3,
+      "min_len": 50,
+      "max_len": 789
+    },
+    "lec05": {
+      "chunk_count": 88,
+      "avg_len": 467.8,
+      "min_len": 74,
+      "max_len": 781
+    },
+    "hw04": {
+      "chunk_count": 71,
+      "avg_len": 528.5,
+      "min_len": 75,
+      "max_len": 793
+    },
+    "hw01": {
+      "chunk_count": 15,
+      "avg_len": 337.3,
+      "min_len": 75,
+      "max_len": 697
+    },
+    "lec02": {
+      "chunk_count": 60,
+      "avg_len": 468.9,
+      "min_len": 70,
+      "max_len": 765
+    },
+    "hw02_sol": {
+      "chunk_count": 68,
+      "avg_len": 541.8,
+      "min_len": 75,
+      "max_len": 791
+    },
+    "lec01": {
+      "chunk_count": 30,
+      "avg_len": 361.6,
+      "min_len": 64,
+      "max_len": 698
+    },
+    "hw01_sol": {
+      "chunk_count": 25,
+      "avg_len": 542.2,
+      "min_len": 74,
+      "max_len": 779
+    }
+  },
+  "total_chunks": 1000,
+  "total_unique_after_dedup": 714,
+  "duplicate_rate": 0.286,
+  "section_coverage": {
+    "by_doc": {
+      "lec04": 1.0,
+      "hw04_sol": 1.0,
+      "lec03": 1.0,
+      "hw05_sol": 1.0,
+      "hw03": 1.0,
+      "hw05": 1.0,
+      "hw02": 1.0,
+      "hw03_sol": 1.0,
+      "lec05": 1.0,
+      "hw04": 1.0,
+      "hw01": 1.0,
+      "lec02": 1.0,
+      "hw02_sol": 1.0,
+      "lec01": 1.0,
+      "hw01_sol": 1.0
+    },
+    "overall": 1.0
+  }
+}
