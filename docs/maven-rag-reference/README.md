@@ -19,6 +19,7 @@
 | [01_requirement_mapping.md](01_requirement_mapping.md) | 按 tasks.md 条目的逐条参考性（高/中/低）与可复用点，及对应 maven-rag 关键文件 |
 | [02_reusable_design.md](02_reusable_design.md) | 可复用工程设计摘要：后端/前端/测试/脚本与配置、数据流 |
 | [03_file_reference.md](03_file_reference.md) | 需求/功能 → 参考文件路径 → 一行说明的速查表 |
+| [04_knowledge_graph_display_and_memory_control.md](04_knowledge_graph_display_and_memory_control.md) | 知识图谱展示与控制（防止内存溢出）：maven-rag 实现要点与结合到本项目的建议 |
 
 ## 与 tasks 优先级对应
 

@@ -6,7 +6,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.agent.skills.loader import load_skills, get_skill_registry, get_skill
 from src.agent.skills.trigger import select_skills_for_input
@@ -30,6 +30,25 @@ def test_get_skill():
     skill = get_skill("qa", PROJECT_ROOT)
     if skill:
         assert skill.get("allowed_tools") == ["rag_retrieve"]
+
+
+def test_get_skill_nonexistent_returns_none():
+    """get_skill 对不存在的 skill_id 返回 None。"""
+    assert get_skill("nonexistent-skill-id", PROJECT_ROOT) is None
+
+
+def test_skill_registry_has_trigger_keywords_and_priority():
+    """多 Skill 的 trigger_keywords 与 priority 加载正确，qa、exercise-recommend 的 body 非空。"""
+    reg = get_skill_registry(PROJECT_ROOT)
+    assert "qa" in reg or "exercise-recommend" in reg
+    for sid in ("qa", "exercise-recommend"):
+        if sid not in reg:
+            continue
+        cfg = reg[sid]
+        assert "trigger_keywords" in cfg and isinstance(cfg["trigger_keywords"], list)
+        assert "body" in cfg and isinstance(cfg["body"], str) and len(cfg["body"].strip()) > 0
+        if "priority" in cfg:
+            assert isinstance(cfg["priority"], (int, float))
 
 
 def test_select_skills_trigger():

@@ -386,6 +386,15 @@
 | **可复用点** | 图谱本身可表达“先修/顺序”关系；学习路径可作为子图或高亮路径在 GraphVisualizer 上展示，需适配教育图谱 schema。 |
 | **关键文件** | `frontend/components/business/GraphVisualizer.tsx`、图数据中的 path/reasoning_path 等 |
 
+#### 11.1.4 内存优化和性能控制
+
+| 项目 | 说明 |
+|------|------|
+| **参考性** | **高** |
+| **可复用点** | **后端**：子图序列化前按度数排序截断为最多 MAX_NODES（100）；`traverse_subgraph(start_nodes, max_depth)` 控制遍历范围，不拉全图。**前端**：接收的 nodes 超过上限时 slice + 过滤边；每次重绘前 `svg.selectAll("*").remove()` 避免 DOM/内存堆积；标签截断。本项目可将上限改为 50，并增加子图 API（seed + max_depth + max_nodes）。 |
+| **关键文件** | `frontend/components/business/GraphVisualizer.tsx`（MAX_NODES=100、边过滤、清空重绘）、`src/services/graph_rag_service.py` 与 `agentic_traversal_service.py` 的 `_graph_to_visualization_format()`（MAX_NODES=100）、`src/services/graph_service.py`（`traverse_subgraph`）。 |
+| **详细说明** | 见 [04_knowledge_graph_display_and_memory_control.md](04_knowledge_graph_display_and_memory_control.md) |
+
 ### 11.2～11.3、12.x 学情分析 / 高级交互 / 多课程与硬件扩展等
 
 | 项目 | 说明 |

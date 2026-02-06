@@ -74,6 +74,14 @@ HackaStone 2026 团队项目：面向《信号与系统》的答疑 + 练习推�
    python tests/test_chroma_init.py
    ```
 
+## 测试
+
+- **日常**：`pytest tests/ -m "not e2e and not slow"`（排除端到端与耗时用例）。
+- **端到端**：需 `OPENROUTER_API_KEY`，`pytest tests/api/test_chat_e2e.py -v`。
+- **性能**：`pytest tests/performance/ -v -s`（响应时间、并发、内存；可选 `pip install psutil` 查看内存增量）。
+
+详见 `pytest.ini` 中 `markers`（e2e、slow、performance）。
+
 ## 仓库
 
 [https://github.com/GoingFall/Agentic-AI-for-Education](https://github.com/GoingFall/Agentic-AI-for-Education)
