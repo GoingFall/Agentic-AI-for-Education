@@ -1,3 +1,198 @@
 /* 可选：覆盖主题色、字体等 */
 /* .message-user { } */
 /* .message-assistant { } */
+
+/* 消息气泡内 Markdown：高度随内容伸缩，支持标题/列表/代码/表格等 */
+.message-markdown-wrapper {
+  width: 100%;
+  min-height: 0;
+}
+
+.message-markdown-wrapper .message-markdown {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.message-markdown-wrapper .message-markdown p {
+  margin-bottom: 0.5em;
+}
+
+.message-markdown-wrapper .message-markdown p:last-child {
+  margin-bottom: 0;
+}
+
+.message-markdown-wrapper .message-markdown pre,
+.message-markdown-wrapper .message-markdown code {
+  font-size: 13px;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.message-markdown-wrapper .message-markdown pre {
+  padding: 8px 10px;
+  overflow-x: auto;
+  margin: 0.5em 0;
+}
+
+.message-markdown-wrapper .message-markdown code {
+  padding: 2px 6px;
+}
+
+.message-markdown-wrapper .message-markdown pre code {
+  padding: 0;
+  background: transparent;
+}
+
+.message-markdown-wrapper .message-markdown ul,
+.message-markdown-wrapper .message-markdown ol {
+  margin-bottom: 0.5em;
+  padding-left: 1.2em;
+}
+
+.message-markdown-wrapper .message-markdown table {
+  font-size: 13px;
+  border-collapse: collapse;
+  margin: 0.5em 0;
+}
+
+.message-markdown-wrapper .message-markdown th,
+.message-markdown-wrapper .message-markdown td {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 6px 10px;
+  text-align: left;
+}
+
+.message-markdown-wrapper .message-markdown th {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.message-markdown-wrapper .message-markdown a {
+  color: #0d6efd;
+}
+
+/* ---------- 可拖拽调整的布局：侧边栏宽度 + 底边栏高度 ---------- */
+.app-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar-panel {
+  width: 280px;
+  min-width: 200px;
+  max-width: 50%;
+  flex-shrink: 0;
+  overflow-y: auto;
+}
+
+.resizer {
+  flex-shrink: 0;
+  background: #dee2e6;
+  user-select: none;
+}
+
+.resizer-vertical {
+  width: 6px;
+  cursor: col-resize;
+}
+
+.resizer-vertical:hover,
+.resizer-vertical:active {
+  background: #adb5bd;
+}
+
+.resizer-horizontal {
+  height: 6px;
+  cursor: row-resize;
+}
+
+.resizer-horizontal:hover,
+.resizer-horizontal:active {
+  background: #adb5bd;
+}
+
+.main-area {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main-area .tab-content {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 激活的 tab-pane 用相对定位，让子级用 absolute 填满，避免内容更新后高度链断裂 */
+.main-area .tab-pane.active {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+/* 知识图谱 Tab 内容：填满 pane，控制栏在上、图谱在下 */
+.graph-tab-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* 知识图谱画布容器：明确 min-height 避免 flex 首帧高度为 0 导致 Cytoscape 不绘制；描边区分画布区域 */
+.graph-cyto-wrapper {
+  flex: 1;
+  min-height: 300px;
+  position: relative;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* 对话区：绝对定位填满 tab-pane，尺寸与内容无关，避免历史加载后布局被撑开 */
+.dialog-tab-layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 消息区占满剩余空间并在内部滚动，不把底部栏顶出视口 */
+.message-section {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.dialog-bottom-bar {
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+  background: var(--bs-body-bg, #fff);
+}
+
+/* 底边 resizer 置于最上，确保可点击拖拽 */
+#bottom-resizer {
+  position: relative;
+  z-index: 11;
+}
+
+/* 对话输入区：flex-shrink: 0 防止被压成 0 高度，保证始终可见 */
+.input-section {
+  height: 140px;
+  min-height: 80px;
+  max-height: 50vh;
+  flex-shrink: 0;
+  overflow-y: auto;
+}

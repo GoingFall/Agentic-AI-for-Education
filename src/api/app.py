@@ -1,7 +1,7 @@
 """
 FastAPI 应用：对话、会话管理、系统状态。
 与 data/sessions/sessions.json 共享存储；与 Dash 可共用同一会话文件。
-启动：uvicorn src.api.app:app --host 0.0.0.0 --port 8000
+启动：python -m src.api.app  或  uvicorn src.api.app:app --host 0.0.0.0 --port 8000
 """
 from __future__ import annotations
 
@@ -13,6 +13,13 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+
+# 加载项目根目录 .env，使 NEO4J_*、OPENROUTER_* 等对子图/Agent 生效
+try:
+    from dotenv import load_dotenv
+    load_dotenv(Path(__file__).resolve().parents[2] / ".env")
+except ImportError:
+    pass
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.exceptions import RequestValidationError
@@ -41,6 +48,7 @@ app = FastAPI(
         {"name": "chat", "description": "7.1.1 对话接口"},
         {"name": "sessions", "description": "7.1.2 会话管理"},
         {"name": "status", "description": "7.1.3 系统状态"},
+        {"name": "graph", "description": "11.1 知识图谱子图与学习路径"},
     ],
 )
 
@@ -311,7 +319,65 @@ def get_status():
     )
 
 
+# ---------- 11.1 知识图谱子图与学习路径（供 Dash 前端）---------
+@app.get(
+    "/api/graph/subgraph",
+    tags=["graph"],
+    summary="获取以某节点为起点的有界子图",
+)
+def get_graph_subgraph(
+    seed_id: str = "lec01",
+    max_depth: int = 2,
+    max_nodes: int = 50,
+):
+    """
+    从 seed_id 出发 BFS 遍历，返回 nodes/edges，单次最多 max_nodes 个节点。
+    防止一次性加载全图，供前端 Cytoscape 按需展示。
+    """
+    try:
+        from src.knowledge_graph.subgraph import get_subgraph
+        out = get_subgraph(seed_id=seed_id, max_depth=max_depth, max_nodes=max_nodes)
+        return out
+    except Exception as e:
+        logger.exception("get_graph_subgraph failed")
+        return JSONResponse(
+            status_code=503,
+            content={"nodes": [], "edges": [], "error": "neo4j_unavailable", "detail": str(e)},
+        )
+
+
+@app.get(
+    "/api/graph/learning-path",
+    tags=["graph"],
+    summary="获取从某 Topic 起的推荐学习路径（PREREQUISITE 序列）",
+)
+def get_graph_learning_path(topic_id: str = "lec01"):
+    """供前端高亮「推荐下一步」路径。"""
+    try:
+        from src.agent.tools.graph import _get_driver
+        from src.knowledge_graph.learning_path import get_learning_path_from_topic
+        driver = _get_driver()
+        try:
+            with driver.session() as session:
+                path = get_learning_path_from_topic(session, topic_id)
+            return {"path": path}
+        finally:
+            driver.close()
+    except Exception as e:
+        logger.exception("get_graph_learning_path failed")
+        return JSONResponse(
+            status_code=503,
+            content={"path": [], "error": "neo4j_unavailable", "detail": str(e)},
+        )
+
+
 @app.get("/api/health")
 def health():
     """简单存活探针。"""
     return {"ok": True}
+
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.getenv("API_PORT", "8000"))
+    uvicorn.run("src.api.app:app", host="0.0.0.0", port=port)

@@ -5,11 +5,13 @@ Dash 应用入口：布局、全局 session_store/session_meta、callbacks。
 from __future__ import annotations
 
 import json
+import os
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
 import dash_bootstrap_components as dbc
+import httpx
 import diskcache
 import markdown as md_lib
 from dash import (
@@ -29,8 +31,19 @@ from dash.exceptions import PreventUpdate
 from .layout import (
     AGENT_REQUEST_STORE_ID,
     CURRENT_SESSION_STORE_ID,
+    CYTO_COMPONENT_ID,
     EXPORT_BTN_ID,
     EXPORT_DOWNLOAD_ID,
+    GRAPH_DEPTH_INPUT_ID,
+    GRAPH_ELEMENTS_STORE_ID,
+    GRAPH_FILTER_CHECKLIST_ID,
+    GRAPH_LAYOUT_DROPDOWN_ID,
+    GRAPH_LEARNING_PATH_STORE_ID,
+    GRAPH_LEARNING_POSITION_DROPDOWN_ID,
+    GRAPH_LOAD_BTN_ID,
+    GRAPH_SEARCH_INPUT_ID,
+    GRAPH_SEED_DROPDOWN_ID,
+    GRAPH_STATUS_ALERT_ID,
     INIT_TRIGGER_STORE_ID,
     LOADING_ID,
     MESSAGE_ANCHOR_ID,
@@ -56,6 +69,98 @@ MAX_MESSAGES_PER_SESSION = 100
 _SESSIONS_DIR = Path(__file__).resolve().parents[2] / "data" / "sessions"
 _SESSIONS_FILE = _SESSIONS_DIR / "sessions.json"
 _STREAMING_DIR = Path(__file__).resolve().parents[2] / "data" / "streaming"
+
+# 11.1 知识图谱：请求 FastAPI 子图/学习路径（Dash 与 API 分端口时使用）
+API_BASE = os.getenv("API_BASE_URL", "http://127.0.0.1:8000")
+MAX_GRAPH_NODES = 50
+
+
+def _api_subgraph(seed_id: str, max_depth: int, max_nodes: int = MAX_GRAPH_NODES) -> tuple[list, list, str | None]:
+    """请求 /api/graph/subgraph，返回 (nodes, edges, error_msg)；成功时 error_msg 为 None。"""
+    try:
+        r = httpx.get(
+            f"{API_BASE}/api/graph/subgraph",
+            params={"seed_id": seed_id, "max_depth": max_depth, "max_nodes": max_nodes},
+            timeout=10.0,
+        )
+        if r.status_code != 200:
+            return [], [], f"API 返回状态码 {r.status_code}"
+        data = r.json()
+        return data.get("nodes") or [], data.get("edges") or [], None
+    except httpx.ConnectError as e:
+        return [], [], f"无法连接 API（{API_BASE}），请确认 API 服务已启动（如：python -m src.api.app）"
+    except httpx.TimeoutException:
+        return [], [], "请求超时，请稍后重试"
+    except Exception as e:
+        return [], [], f"子图加载失败：{e!s}"
+
+
+def _api_learning_path(topic_id: str) -> list:
+    """请求 /api/graph/learning-path，返回 path 列表。"""
+    if not topic_id:
+        return []
+    try:
+        r = httpx.get(f"{API_BASE}/api/graph/learning-path", params={"topic_id": topic_id}, timeout=10.0)
+        if r.status_code != 200:
+            return []
+        return r.json().get("path") or []
+    except Exception:
+        return []
+
+
+def _nodes_edges_to_cyto_elements(
+    nodes: list,
+    edges: list,
+    path_ids: list | None = None,
+    current_id: str | None = None,
+    type_filter: list | None = None,
+    search_id: str | None = None,
+) -> list:
+    """将 API 的 nodes/edges 转为 Cytoscape elements，并应用 path/高亮/类型过滤/搜索高亮。"""
+    path_set = set(path_ids or [])
+    type_ok = set(type_filter or ["Topic", "Exercise", "Concept"])
+    el = []
+    node_ids_ok = set()
+    for n in nodes:
+        if n.get("type") not in type_ok:
+            continue
+        nid = n.get("id", "")
+        if not nid:
+            continue
+        node_ids_ok.add(nid)
+        classes = [n.get("type", "Node")]
+        if nid in path_set:
+            classes.append("path")
+        if current_id and nid == current_id:
+            classes.append("highlight")
+        if search_id and search_id.strip() and (search_id.strip() in nid or nid == search_id.strip()):
+            classes.append("highlight")
+        el.append({"data": {"id": nid, "label": n.get("label") or nid}, "classes": " ".join(classes)})
+    for e in edges:
+        a, b = e.get("source"), e.get("target")
+        if a in node_ids_ok and b in node_ids_ok:
+            el.append({"data": {"source": a, "target": b, "type": e.get("type", "")}})
+    return el
+
+
+def _merge_and_cap_subgraph(
+    current_nodes: list, current_edges: list, new_nodes: list, new_edges: list, cap: int = MAX_GRAPH_NODES
+) -> tuple[list, list]:
+    """合并新旧节点/边并去重，截断至 cap 个节点，边只保留两端均在节点集合内的。"""
+    by_id = {n.get("id"): n for n in current_nodes if n.get("id")}
+    for n in new_nodes:
+        if n.get("id"):
+            by_id[n["id"]] = n
+    nodes_list = list(by_id.values())[:cap]
+    node_ids = {n["id"] for n in nodes_list}
+    edges_seen = set()
+    edges_list = []
+    for e in current_edges + new_edges:
+        a, b = e.get("source"), e.get("target")
+        if a in node_ids and b in node_ids and (a, b) not in edges_seen:
+            edges_seen.add((a, b))
+            edges_list.append(e)
+    return nodes_list, edges_list
 
 
 def _load_sessions():
@@ -174,23 +279,27 @@ def _ensure_session(session_meta: dict, current_id: str | None):
     return sid
 
 
-def _markdown_to_html(text: str):
-    """将 Markdown 转为 HTML，用 Iframe(srcDoc) 渲染，避免 dcc.Markdown 的 defaultProps 警告。"""
+def _markdown_content(text: str):
+    """将 Markdown 转为 HTML 并用 iframe(srcDoc) 展示，避免 dcc.Markdown 的 defaultProps 警告；高度由前端 resize.js 按内容自适应。"""
     if not (text or "").strip():
         return html.Div()
     try:
-        body_html = md_lib.markdown(text, extensions=["nl2br"])
+        body_html = md_lib.markdown(text, extensions=["nl2br", "fenced_code", "tables"])
         styled = (
             "<!DOCTYPE html><html><head><meta charset='utf-8'>"
             "<style>body{font-family:inherit;font-size:14px;line-height:1.5;margin:0;padding:6px;} "
-            "a{color:#0d6efd;}</style></head><body>"
+            "a{color:#0d6efd;} pre,code{background:rgba(0,0,0,.06);border-radius:4px;} pre{padding:8px 10px;} code{padding:2px 6px;}</style></head><body>"
             + body_html
             + "</body></html>"
         )
-        return html.Iframe(
-            srcDoc=styled,
-            style={"width": "100%", "minHeight": "60px", "border": "none"},
-            title="",
+        return html.Div(
+            html.Iframe(
+                srcDoc=styled,
+                className="message-content-iframe",
+                style={"width": "100%", "minHeight": "24px", "border": "none", "display": "block"},
+                title="",
+            ),
+            className="message-markdown-wrapper",
         )
     except Exception:
         return html.Pre((text or "").strip())
@@ -582,7 +691,7 @@ def render_messages(messages_data):
             out.append(
                 dbc.Row(
                     dbc.Col(
-                        dbc.Card([dbc.CardBody(_markdown_to_html(content))], color="primary", outline=True, className="ms-auto"),
+                        dbc.Card([dbc.CardBody(_markdown_content(content))], color="primary", outline=True, className="ms-auto"),
                         width=10,
                     ),
                     className="mb-2 justify-content-end",
@@ -597,11 +706,11 @@ def render_messages(messages_data):
                 parts = content.split("## 推荐练习", 1)
                 main_block = parts[0].strip()
                 recommend_block = parts[1].strip() if len(parts) > 1 else None
-            body = [_markdown_to_html(main_block)]
+            body = [_markdown_content(main_block)]
             if recommend_block:
                 body.append(
                     dbc.Card(
-                        [dbc.CardHeader("推荐练习"), dbc.CardBody(_markdown_to_html(recommend_block))],
+                        [dbc.CardHeader("推荐练习"), dbc.CardBody(_markdown_content(recommend_block))],
                         color="info",
                         outline=True,
                         className="mt-2",
@@ -656,6 +765,121 @@ def export_session(n_clicks, current_id, sessions_data):
     }
     content = json.dumps(export_data, ensure_ascii=False, indent=2)
     return dcc.send_string(content, filename=f"session_{current_id[:8]}.json")
+
+
+# ---------- 11.1 知识图谱：加载子图 ----------
+@app.callback(
+    [Output(GRAPH_ELEMENTS_STORE_ID, "data"), Output(GRAPH_STATUS_ALERT_ID, "children")],
+    Input(GRAPH_LOAD_BTN_ID, "n_clicks"),
+    State(GRAPH_SEED_DROPDOWN_ID, "value"),
+    State(GRAPH_DEPTH_INPUT_ID, "value"),
+    prevent_initial_call=True,
+)
+def graph_load_subgraph(n_clicks, seed_id, depth_val):
+    if not n_clicks:
+        raise PreventUpdate
+    seed_id = seed_id or "lec01"
+    try:
+        depth = int(depth_val) if depth_val is not None else 2
+        depth = max(1, min(3, depth))
+    except (TypeError, ValueError):
+        depth = 2
+    nodes, edges, error_msg = _api_subgraph(seed_id, depth, MAX_GRAPH_NODES)
+    if error_msg:
+        return {"nodes": [], "edges": []}, dbc.Alert(error_msg, color="danger", dismissable=True)
+    if not nodes and not edges:
+        hint = "未获取到节点。请确认 Neo4j 已启动并已执行图谱构建（如 python -m src.knowledge_graph.build）。"
+        return {"nodes": [], "edges": []}, dbc.Alert(hint, color="warning", dismissable=True)
+    node_ids = {n.get("id") for n in nodes[:MAX_GRAPH_NODES] if n.get("id")}
+    nodes = nodes[:MAX_GRAPH_NODES]
+    edges = [e for e in edges if e.get("source") in node_ids and e.get("target") in node_ids]
+    success_msg = f"已加载 {len(nodes)} 个节点、{len(edges)} 条边。"
+    return {"nodes": nodes, "edges": edges}, dbc.Alert(success_msg, color="success", dismissable=True)
+
+
+# ---------- 11.1 知识图谱：当前学习位置 -> 拉取 path 存 Store ----------
+@app.callback(
+    Output(GRAPH_LEARNING_PATH_STORE_ID, "data"),
+    Input(GRAPH_LEARNING_POSITION_DROPDOWN_ID, "value"),
+)
+def graph_learning_path_store(topic_id):
+    if not topic_id:
+        return []
+    return _api_learning_path(topic_id)
+
+
+# ---------- 11.1 知识图谱：Store + path/过滤/搜索 -> Cytoscape elements + layout ----------
+def _build_cyto_layout(layout_name: str, node_ids: set[str], seed_id: str | None) -> dict:
+    """根据布局类型与当前节点/起点生成 Cytoscape layout 配置，减少重叠、提高可读性。"""
+    if layout_name == "breadthfirst":
+        root = [seed_id] if seed_id and seed_id in node_ids else (list(node_ids)[:1] if node_ids else [])
+        return {"name": "breadthfirst", "roots": root, "directed": True, "padding": 50, "animate": True}
+    if layout_name == "concentric":
+        return {"name": "concentric", "padding": 50, "animate": True}
+    # 默认 cose：力导向且参数偏宽松
+    return {
+        "name": "cose",
+        "idealEdgeLength": 180,
+        "nodeOverlap": 40,
+        "nodeRepulsion": 700000,
+        "padding": 60,
+        "animate": True,
+    }
+
+
+@app.callback(
+    [Output(CYTO_COMPONENT_ID, "elements"), Output(CYTO_COMPONENT_ID, "layout")],
+    Input(GRAPH_ELEMENTS_STORE_ID, "data"),
+    Input(GRAPH_LEARNING_PATH_STORE_ID, "data"),
+    Input(GRAPH_SEARCH_INPUT_ID, "value"),
+    Input(GRAPH_LAYOUT_DROPDOWN_ID, "value"),
+    State(GRAPH_LEARNING_POSITION_DROPDOWN_ID, "value"),
+    State(GRAPH_FILTER_CHECKLIST_ID, "value"),
+    State(GRAPH_SEED_DROPDOWN_ID, "value"),
+)
+def graph_cyto_elements(store_data, path_data, search_val, layout_name, learning_position, type_filter, seed_id):
+    if not store_data or not isinstance(store_data, dict):
+        return [], no_update
+    nodes = store_data.get("nodes") or []
+    edges = store_data.get("edges") or []
+    path_ids = path_data if isinstance(path_data, list) else []
+    elements = _nodes_edges_to_cyto_elements(
+        nodes,
+        edges,
+        path_ids=path_ids,
+        current_id=learning_position or None,
+        type_filter=type_filter or ["Topic", "Exercise", "Concept"],
+        search_id=search_val,
+    )
+    node_ids = set()
+    for el in elements:
+        d = el.get("data") or {}
+        if d.get("id") and "source" not in d:
+            node_ids.add(d["id"])
+    layout_config = _build_cyto_layout(layout_name or "cose", node_ids, seed_id)
+    return elements, layout_config
+
+
+# ---------- 11.1 知识图谱：节点点击展开（按需加载相邻）---------
+@app.callback(
+    Output(GRAPH_ELEMENTS_STORE_ID, "data", allow_duplicate=True),
+    Input(CYTO_COMPONENT_ID, "tapNodeData"),
+    State(GRAPH_ELEMENTS_STORE_ID, "data"),
+    prevent_initial_call=True,
+)
+def graph_tap_node_expand(tap_node_data, current_store):
+    if not tap_node_data or not isinstance(tap_node_data, dict):
+        raise PreventUpdate
+    clicked_id = tap_node_data.get("id")
+    if not clicked_id:
+        raise PreventUpdate
+    nodes, edges, _ = _api_subgraph(clicked_id, max_depth=1, max_nodes=MAX_GRAPH_NODES)
+    if not nodes and not edges:
+        return no_update
+    cur_nodes = (current_store or {}).get("nodes") or []
+    cur_edges = (current_store or {}).get("edges") or []
+    merged_nodes, merged_edges = _merge_and_cap_subgraph(cur_nodes, cur_edges, nodes, edges, cap=MAX_GRAPH_NODES)
+    return {"nodes": merged_nodes, "edges": merged_edges}
 
 
 if __name__ == "__main__":
